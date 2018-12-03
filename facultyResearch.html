@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = "UTF-8">
+    <meta name="keyword" content="Brandon Mok, Web Developer, Software Developer">
+    <title>BM | Faculty Research</title>
+    <link rel="stylesheet" href="css/styles.css"><!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"><!-- Font -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"><!-- Favicon -->
+</head>
+<body>
+    <!-- Container -->
+    <div class ="container">
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <!-- Hamburger for responsiveness (initially not shown) -->
+            <span id="hamburger" onclick="openNav()">&#9776;</span>
+
+            <!-- Logo -->
+            <a href="index.html" class="logoHover"><p class="logo">BM</p></a>
+
+            <!-- Original Navigation!-->
+            <ul class="firstNav">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#resume">Resume</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <!-- For responsive -->
+            <!-- Orignally not shown -->
+            <div id="myNav" class="overlay">
+                <!-- Close Button -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Actual links -->
+                <div class="overlay-content">
+                    <ul>
+                        <li><a href="index.html#about" onclick="closeNav()">About</a></li>
+                        <li><a href="index.html#projects" onclick="closeNav()">Projects</a></li>
+                        <li><a href="index.html#resume" onclick="closeNav()">Resume</a></li>
+                        <li><a href="index.html#contact" onclick="closeNav()">Contact</a></li>
+                    </ul>
+                </div>
+            </div><!-- End of myNav-->
+
+        </div><!-- End of navigation -->
+
+        <!-- Project -->
+        <div class="project">
+            <div class="projectContent">
+                    <p class="heading">Faculty Research - Group</p>
+                    <p>
+                        The project was part of the
+                        Database Connectivity & Access course where groups
+                        were assigned the task to allow different types 
+                        of users to search for current faculty research projects.
+                    </p>
+                    <p>
+                        My group used Java for the project as the user interface was done with
+                        JavaFX and the program's functionality of interacting with 
+                        the database was completed with various classes: presentation layer,
+                        business layer, and database layer.
+                    </p>
+                    <p>
+                        Depending on the type of user when logging in, different functionalities
+                        are either available or disabled. The available functions consist of
+                        select, insert, update, and delete. As a result, a faculty member has 
+                        access to all functions while a student and public user only have a search
+                        function (select).
+                    </p>
+                    <p>
+                        I primarily fulfilled the user interface aspect of the project as each function
+                        has its own screen. For example, if a user logins in successfully, the login screen
+                        switches to the default search screen. The switching of screens
+                        is consistent with all other functions due to each process
+                        requiring different information to successfully perform the action.
+                    </p>
+                    <p>
+                        I was also responsible for verifying that my
+                        code successfully interacted with the group's code. 
+                        I troubleshot the information my classes were sending, the variables in the
+                        database, and the methods my group members created. I further contributed
+                        different ideas for improvement. 
+                    </p>
+            </div>
+
+            <!-- Slide Show -->
+            <div class="showProject fadein">
+                <div class="mySlides fadein fixSlide">
+                    <image src="images/FacultyResearch/Login.png"></image>
+                </div>
+                <div class="mySlides fadein fixSlide">
+                    <image src="images/FacultyResearch/select.png"></image>
+                </div>
+                <div class="mySlides fadein fixSlide">
+                    <image src="images/FacultyResearch/FacultyOptions.png"></image>
+                </div>
+                <div class="mySlides fadein fixSlide">
+                    <image src="images/FacultyResearch/delete.png"></image>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div><!-- End of project-->
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer>
+            <p class="hiring">Hiring?</p>
+            <p class="footerText">I'm coincidentally searching for a co-op/internship!</p>
+            <a href="resume.pdf" target="_blank"><div class="resumeBtn" id="resume">Resume</div></a>
+            <div class="social">
+                <a href="https://linkedin.com/in/brandonmok"> 
+                    <image src="images/linkedInIcon.svg" alt="LinkedIn Icon" class="socialIcons"></image>
+                </a>
+                <a href="https://github.com/BrandonMok">
+                    <image src="images/githubIcon.svg" alt="GitHub Icon" class="socialIcons"></image>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2018 Brandon Mok</p>
+        </footer>
+        
+    </div><!-- End of Container-->
+
+
+    <script type='text/javascript' src="js/javascript.js"></script>
+</body>
+</html>

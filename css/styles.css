@@ -1,0 +1,510 @@
+/** 
+* Personal Website V2
+* CSS
+* @author Brandon Mok
+*/
+
+*{
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+}
+
+/* Container */
+.container{
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo{
+    display: inline;
+    font-size: 2.2em;
+    padding-left: 1.5em;
+}
+.logo:hover{
+   font-weight: normal;
+}
+
+
+/* Heading */
+.heading{
+    font-size: 3em;
+    padding-bottom: .5em;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+
+
+
+/** Navigation */
+.navigation{
+    display: inline;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    min-height: 59px;
+    z-index: 10; 
+    box-shadow: 0 4px 10px rgba(0,0,0,.16);
+}
+
+div ul{
+    float: right;
+    overflow: hidden;
+}
+
+ul li{
+    display: inline-block;
+    padding: 1.25em;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+
+/** Background image for div */
+.backImage{
+    background-image: url(../images/homepage2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+    width: 100%;
+    margin-top: 1.5em;
+    animation: fadein 2.25s;
+    margin-bottom: 2em;
+}
+
+.imageText{
+    color:white;
+    font-size: 100px;
+    background: transparent;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); /* slides it over */
+}
+
+
+
+
+/** About */
+.about{
+    display: flex;
+    padding-top: 4em;
+    margin-bottom: 5em;
+}
+
+.aboutContent{
+    text-align: center;
+    padding-left: 2em;
+    flex: 1 1 50%;
+}
+
+.profileIMG{
+    text-align: center;
+    flex: 1 1 50%;
+    background-image: url("../images/profile.png");
+    background-repeat: no-repeat;
+    margin-left: 12em; 
+}
+
+div .aboutContent p{
+    padding: .5em;
+}
+
+
+
+
+/** Projects */
+.projects{
+    margin-bottom: 4em; 
+    padding-bottom: 2em;
+    background-color: #F7F7F7;
+}
+
+.tilesContainer{
+    margin-left: 3em;
+    margin-right: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.aTile{
+    flex: 1 1 50%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    text-align: center;
+}
+
+
+#tile1{
+    background-color: #28b8f6;
+}
+div #tile1:hover{
+    font-size: 14pt;
+    font-weight: bold;
+    position: relative;
+    z-index: 5;
+    transform: scale(1.1);
+    box-shadow: 6px 6px #0b98d5;
+}
+#tile2{
+    background-color: #F9627D;
+}
+div #tile2:hover{
+    font-size: 14pt;
+    font-weight: bold;
+    position: relative;
+    z-index: 5;
+    transform: scale(1.1);  
+    box-shadow: 6px 6px #f75976;
+}
+#tile3{
+    background-color: #8FF7A7;
+}
+div #tile3:hover{
+    font-size: 14pt;
+    font-weight: bold;
+    position: relative;
+    z-index: 5;
+    transform: scale(1.1);
+    box-shadow: 6px 6px #46e26a;
+}
+#tile4{
+    background-color: #FF9B42;
+}
+div #tile4:hover{
+    font-size: 14pt;
+    font-weight: bold;
+    position: relative;
+    z-index: 5;
+    transform: scale(1.1);
+    box-shadow: 6px 6px #f98924 ;
+}
+#tile5{
+    background-color: #FFED66;
+}
+div #tile5:hover{
+    font-size: 14pt;
+    font-weight: bold;
+    position: relative;
+    z-index: 5;
+    transform: scale(1.1); 
+    box-shadow: 6px 6px #fee62f;
+}
+#tile6{
+    background-color: #90D7FF;
+}
+#tile6:hover{
+    font-size: 14pt;
+    font-weight: bold;
+    position: relative;
+    z-index: 5;
+    transform: scale(1.1); 
+    box-shadow: 6px 6px #49bcfd;
+}
+
+
+
+
+
+
+
+/** Contact */
+.contact{ /** Contact section container */
+    display: flex;
+    padding-top: 4em;
+    margin: 1em 3em 4em 3em;
+}
+
+.contactMe{ /** Content Div */
+    flex: 1 1 50%;
+}
+
+.contactForm{ /** Form Div */
+    flex: 1 1 50%;
+    margin-left: 2em; /** Keep the div from touching right side */
+}
+
+form{ /** Actual Form */
+    display: block;
+    padding: 1em;
+    background-color: #F5F5F5;
+    border-radius: 1.2em;
+}
+
+.formSpan{
+    display: block;
+}
+
+input{ /** Textfields */
+    display: inline-block;
+    padding-bottom: .25em;
+    margin-bottom: 1em;
+}
+
+input[type=submit]{
+    display: inline;
+}
+
+
+
+
+
+/** Footer */
+footer{
+    background-color: #E8E8E8;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+.hiring{ /** Hiring header */
+    font-size: 18pt;
+    padding: .5em;
+}
+
+.footerText{
+    padding-bottom: 1em;
+}
+
+.resumeBtn{ /** Resume Button */
+    display: inline-block;
+    border: #b8b8b8 solid;
+    background-color: #E8E8E8;
+    padding: 1em;
+    font-size: 12pt;
+    margin-bottom: 1em;
+}
+
+.resumeBtn:hover{
+    font-size: 13pt;
+    border: #8c8c8c solid;
+}
+
+.social{ 
+    padding: .5em;
+}
+
+.socialIcons{/** Social media Icons */
+    padding: 1em;
+    width: 2em;
+    height: 2em;
+}
+
+.copyright{
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.socialIcons:hover{
+    width: 3em;
+    height: 3em;
+}
+
+
+
+
+/** Responsive nav bar */
+/* Changes original to hamburger menu for viewports */
+#hamburger{
+    display:none;
+    left: 2em;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+.closebtn{
+    display:none; 
+    font-size: 4em;
+    float: right;
+}
+
+.myNav{
+    display: block;
+}
+
+/** After clicking hamburger */
+.overlay { 
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    background-color: white;
+}
+
+/* links inside overlay */
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    float: right;
+    color: 	#404040;
+}
+
+.overlay-content ul li a{
+    padding: 8px;
+    font-size: 32px;
+    text-align: center;
+    display: block;
+    transition: 0.3s;
+    color: #808080;
+}
+
+
+
+
+/** Styles for all projects in tiles */
+.project{
+    display: flex;
+    margin: 5em 2em 4em 2em;
+}
+.projectHeading{
+    font-size: 3em;
+    padding-bottom: .5em;
+}
+.projectContent{ /** Information about project */
+    flex: 1 1 50%;
+}
+
+.project .projectContent p{
+    padding: 1em;
+}
+
+.showProject{ /** Slideshow container */
+    /* flex: 1 1 50%; */
+    margin: 1.5em;
+    position: relative;
+}
+
+.mySlides{ /** Don't show all images initially */
+    display: none;
+}
+
+.fixSlide{
+    padding-top: 13em;
+}
+
+.prev, .next{ /** Buttons */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+    font-size: 18px;
+    transition: .5s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+
+
+/** Anchor tags */
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+
+
+
+
+
+/** Fade */
+@keyframes fadein {  
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/** Media Queries */
+@media screen and (max-width: 900px){
+}
+@media screen and (max-width: 700px){
+    /* Don't show profile image */
+    .profileIMG{
+        display: none;
+    } 
+    /** Contact from section */
+    .contact{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .contactME{
+        flex: 1 1 100%;
+    }
+    .contactForm{
+        flex: 1 1 100%;
+        margin: 0;
+        margin-top: .75em;
+    }
+    textarea{
+        width: 15em;
+        height: 5em;
+    }
+
+    /* Don't show the slideshow */
+    .showProject{
+        display:none;
+    }
+}
+@media screen and (max-width: 600px){
+    /** Hide the navigation */
+    .firstNav{
+        display: none;
+    }
+
+    /** Display responsive navigation bar */
+    #hamburger{
+        display: inline-block;
+        position: relative;
+    }
+    .closebtn{
+        display: inline-block;
+        position: relative;  
+    }
+}
+@media screen and (max-width: 500px){
+
+}
+@media screen and (max-width: 320px){
+}
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = "UTF-8">
+    <meta name="keyword" content="Brandon Mok, Web Developer, Software Developer">
+    <title>BM | Personal Website V1</title>
+    <link rel="stylesheet" href="css/styles.css"><!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"><!-- Font -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"><!-- Favicon -->
+</head>
+<body>
+
+    <!-- Container -->
+    <div class ="container">
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <!-- Hamburger for responsiveness (initially not shown) -->
+            <span id="hamburger" onclick="openNav()">&#9776;</span>
+
+            <!-- Logo -->
+            <a href="index.html" class="logoHover"><p class="logo">BM</p></a>
+
+            <!-- Original Navigation!-->
+            <ul class="firstNav">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#resume">Resume</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+
+            <!-- For responsive -->
+            <!-- Orignally not shown -->
+            <div id="myNav" class="overlay">
+                <!-- Close Button -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Actual links -->
+                <div class="overlay-content">
+                    <ul>
+                        <li><a href="index.html#about" onclick="closeNav()">About</a></li>
+                        <li><a href="index.html#projects" onclick="closeNav()">Projects</a></li>
+                        <li><a href="index.html#resume" onclick="closeNav()">Resume</a></li>
+                        <li><a href="index.html#contact" onclick="closeNav()">Contact</a></li>
+                    </ul>
+                </div>
+            </div><!-- End of myNav-->
+
+        </div><!-- End of navigation -->
+
+        
+        
+
+        <!-- Project information -->
+        <div class="project">
+            <!-- Content -->
+            <div class="projectContent">
+                <p class="heading">Personal Website V1</p>
+                <p>
+                    My first personal website was created over the summer of 2018 as
+                    I spent numerous hours designing and creating the pages to my liking. 
+                    This project, although not a lot, 
+                    provided an extreme sense of pride as I felt that it was a representation
+                    of my work to show to others. I could finally redirect
+                    people to my site if they wanted ideas for projects, but 
+                    I have also used it for potential employers to gain a 
+                    perspective and a way to contact me.
+                </p>
+                <p>I further created this project as I wanted a website that was mine. 
+                    I've made multiple individual websites in the past, but those were 
+                    course specific to display assignments and projects. Having my own
+                    website meant more expression and individualization as I 
+                    can display my style and provide an idea of the person I am. 
+                </p>
+                <p>
+                    Overtime, however, I felt that the project served its purpose, but
+                    was not quite what I wanted. As a result, I wanted to 
+                    re-design and make the site more intuitive and professional than that of 
+                    the original which is the product of the current site you are on.
+                </p>
+            </div>
+
+            <!-- Slide Show -->
+            <div class="showProject fadein">
+                <div class="mySlides fadein">
+                    <image src="images/PersonalWebV1/homepage.png"></image>
+                </div>
+                <div class="mySlides fadein">
+                    <image src="images/PersonalWebV1/about.png"></image>
+                </div>
+                <div class="mySlides fadein">
+                    <image src="images/PersonalWebV1/projects.png"></image>
+                </div>
+                <div class="mySlides fadein">
+                    <image src="images/PersonalWebV1/contact.png"></image>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div><!-- End of project -->
+
+
+        
+
+
+
+
+        <!-- Footer -->
+        <footer>
+            <p class="hiring">Hiring?</p>
+            <p class="footerText">I'm coincidentally searching for a co-op/internship!</p>
+            <a href="resume.pdf" target="_blank"><div class="resumeBtn" id="resume">Resume</div></a>
+            <div class="social">
+                <a href="https://linkedin.com/in/brandonmok"> 
+                    <image src="images/linkedInIcon.svg" alt="LinkedIn Icon" class="socialIcons"></image>
+                </a>
+                <a href="https://github.com/BrandonMok">
+                    <image src="images/githubIcon.svg" alt="GitHub Icon" class="socialIcons"></image>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2018 Brandon Mok</p>
+        </footer>
+        
+    </div><!-- End of Container-->
+
+    <script type='text/javascript' src="js/javascript.js"></script>
+</body>
+</html>

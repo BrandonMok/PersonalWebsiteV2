@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = "UTF-8">
+    <meta name="keyword" content="Brandon Mok, Web Developer, Software Developer">
+    <title>Brandon Mok | Web Developer</title>
+    <link rel="stylesheet" href="css/styles.css"><!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"><!-- Font -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"><!-- Favicon -->
+    <script type='text/javascript' src="js/javascript.js"></script>
+</head>
+<body>
+    <!-- Container -->
+    <div class ="container">
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <!-- Hamburger for responsiveness (initially not shown) -->
+            <span id="hamburger" onclick="openNav()">&#9776;</span>
+
+            <!-- Logo -->
+            <a href="index.html" class="logoHover"><p class="logo">BM</p></a>
+
+            <!-- Original Navigation!-->
+            <ul class="firstNav">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#resume">Resume</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+
+            <!-- For responsive -->
+            <!-- Orignally not shown -->
+            <div id="myNav" class="overlay">
+                <!-- Close Button -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Actual links -->
+                <div class="overlay-content">
+                    <ul>
+                        <li><a href="index.html#about" onclick="closeNav()">About</a></li>
+                        <li><a href="index.html#projects" onclick="closeNav()">Projects</a></li>
+                        <li><a href="index.html#resume" onclick="closeNav()">Resume</a></li>
+                        <li><a href="index.html#contact" onclick="closeNav()">Contact</a></li>
+                    </ul>
+                </div>
+            </div><!-- End of myNav-->
+
+        </div><!-- End of navigation -->
+
+
+        <!-- Landing image-->
+        <div class="backImage fadein">
+            <p class="imageText">Hi.</p>
+        </div><!-- end of landing-->
+
+
+        <!-- About -->
+        <div class="about" id="about">
+            <!-- About Me-->
+            <div class="aboutContent">
+                <span class = "heading">Hi there!</span>
+                <p>I'm Brandon Mok and, I'm a Web & Mobile Computing (WMC) major
+                    studying at Rochester Institute of Technology.
+                </p>
+                <p>
+                    I focus on software development as I've worked with databases, object orientated 
+                    programming, and full stack web development.
+                    Of the three areas, I prefer web development due to the unique challenges 
+                    and different emerging technologies to learn! 
+                </p>
+                <p>
+                    The projects I have participated in can be found below in the "Projects" 
+                    section and also on my resume.
+                </p>
+                <p>
+                    If you would like to contact me, visit the "Contact" section further
+                    down the page.
+                </p>
+            </div>
+
+            <!-- Profile Picture-->
+            <div class="profileIMG"></div>
+            
+        </div><!-- End of About -->
+
+
+        <!-- Projects -->
+        <div class="projects" id="projects">
+            <p class="heading textCenter">Projects</p>
+            <div class="tilesContainer">
+                <div class="aTile" id="tile1"><a href="favoritePlace.html">Favorite Place - Individual</a></div>
+                <div class="aTile" id="tile2"><a href="realtor.html">Realtor Website - Group</a></div>
+                <div class="aTile" id="tile3">SMTP Mail - Group</div>
+                <div class="aTile" id="tile4"><a href="facultyResearch.html">Faculty Research - Group</a></div>
+                <div class="aTile" id="tile5">Cynergy - Group</div>
+                <div class="aTile" id="tile6"><a href="personalWebsiteV1.html">Personal Website v1</a></div>
+            </div>
+        </div><!-- End of projects-->
+
+
+
+        <!-- Contact -->
+        <div class="contact" id="contact">
+            <!-- Contact Content -->
+            <div class="contactMe">
+                <p class="heading">Contact</p>
+                <p>Interested in my work of want to work together?
+                    Feel free to get in touch by filling out this form!
+                </p>
+            </div>
+            <!-- Contact Form-->
+            <div class="contactForm">
+                <form name="contact" method="POST" action="" netlify>
+                    <span class="formSpan">Name:</span><input type="text" name="name" required><br>
+                    <span class="formSpan">Subject:</span><input type="text" name="subject" required><br>
+                    <span class="formSpan">Email:</span><input type="email" name="email" required><br>
+                    <span class="formSpan">Message:</span><br>
+                    <textarea name="message" rows="4" cols="40" placeholder="Message"></textarea>
+                    <input type="submit" value="Send" id="subBtn" onsubmit="doAlert()">
+                </form>
+            </div>
+        </div><!-- End of contact -->
+
+
+
+        <!-- Footer -->
+        <footer>
+            <p class="hiring">Hiring?</p>
+            <p class="footerText">I'm coincidentally searching for a co-op/internship!</p>
+            <a href="resume.pdf" target="_blank"><div class="resumeBtn" id="resume">Resume</div></a>
+            <div class="social">
+                <a href="https://linkedin.com/in/brandonmok"> 
+                    <image src="images/linkedInIcon.svg" alt="LinkedIn Icon" class="socialIcons"></image>
+                </a>
+                <a href="https://github.com/BrandonMok">
+                    <image src="images/githubIcon.svg" alt="GitHub Icon" class="socialIcons"></image>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2018 Brandon Mok</p>
+        </footer>
+        
+    </div><!-- End of Container-->
+</body>
+</html>

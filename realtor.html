@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = "UTF-8">
+    <meta name="keyword" content="Brandon Mok, Web Developer, Software Developer">
+    <title>BM | Realtor Website</title>
+    <link rel="stylesheet" href="css/styles.css"><!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"><!-- Font -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"><!-- Favicon -->
+</head>
+<body>
+    <!-- Container -->
+    <div class ="container">
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <!-- Hamburger for responsiveness (initially not shown) -->
+            <span id="hamburger" onclick="openNav()">&#9776;</span>
+
+            <!-- Logo -->
+            <a href="index.html" class="logoHover"><p class="logo">BM</p></a>
+
+            <!-- Original Navigation!-->
+            <ul class="firstNav">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#resume">Resume</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <!-- For responsive -->
+            <!-- Orignally not shown -->
+            <div id="myNav" class="overlay">
+                <!-- Close Button -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Actual links -->
+                <div class="overlay-content">
+                    <ul>
+                        <li><a href="index.html#about" onclick="closeNav()">About</a></li>
+                        <li><a href="index.html#projects" onclick="closeNav()">Projects</a></li>
+                        <li><a href="index.html#resume" onclick="closeNav()">Resume</a></li>
+                        <li><a href="index.html#contact" onclick="closeNav()">Contact</a></li>
+                    </ul>
+                </div>
+            </div><!-- End of myNav-->
+
+        </div><!-- End of navigation -->
+
+        <!-- Project -->
+        <div class="project">
+            <div class="projectContent">
+                    <p class="heading">Realtor Website - Group</p>
+                    <p>Based on the Web and Mobile II course, 
+                        groups of 4 members were given the task to create
+                        a project based on an informative topic.
+                    </p>
+                    <p>
+                        My group didn't have a specific idea, but one 
+                        group member mentioned that his mother, a home realtor,
+                        was wanting a personal business website. 
+                        With no previous ideas, we all agreed on the idea as
+                        we further thought that it would be an interesting
+                        experience.
+                    </p>
+                    <p>
+                        I acted as team leader as I held meetings, communicated daily
+                        with updates and requirements, and distributed tasks. I made sure
+                        that each task would be completed by a certain date as I maintained
+                        the group's productivity during the project. 
+                    </p>
+                    <p>
+                        Besides watching over the group, I also made several pages and layouts
+                        to contribute to the progress of the project. I further combined everyone's 
+                        code so that it was a fully functional product. 
+                    </p>
+                    <p>
+                        The biggest obstacle of project was due to one group member's attitude that changed
+                        towards the end of the project. They did not fulfill their responsibities
+                        like they stated, and waited until the last few hours until the due date to fulfill their part.
+                        The used solution was to quickly communicate with the member while they worked: not the best solution, but
+                        was successful while other previous actions and solutions failed. 
+                    </p>
+                    <p>
+                        As a result of the obstacle, the appearance of the project failed our expectations as they were responsible
+                        for the header, footer, database, and parts of CSS. That being said, previous versions before the member's
+                        part, appeared well and professional.
+                    </p>
+            </div>
+
+            <!-- Slide Show -->
+            <div class="showProject fadein">
+                <div class="mySlides fadein fixSlide">
+                    <image src="images/realtor/homepage.png"></image>
+                </div>
+                <div class="mySlides fadein fixSlide">
+                    <image src="images/realtor/about.png"></image>
+                </div>
+                <div class="mySlides fadein fixSlide">
+                    <image src="images/realtor/stories.png"></image>
+                </div>
+                <div class="mySlides fadein fixSlide">
+                    <image src="images/realtor/community.png"></image>
+                </div>
+                <div class="mySlides fadein fixSlide">
+                    <image src="images/realtor/contact.png"></image>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div><!-- End of project-->
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer>
+            <p class="hiring">Hiring?</p>
+            <p class="footerText">I'm coincidentally searching for a co-op/internship!</p>
+            <a href="resume.pdf" target="_blank"><div class="resumeBtn" id="resume">Resume</div></a>
+            <div class="social">
+                <a href="https://linkedin.com/in/brandonmok"> 
+                    <image src="images/linkedInIcon.svg" alt="LinkedIn Icon" class="socialIcons"></image>
+                </a>
+                <a href="https://github.com/BrandonMok">
+                    <image src="images/githubIcon.svg" alt="GitHub Icon" class="socialIcons"></image>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2018 Brandon Mok</p>
+        </footer>
+        
+    </div><!-- End of Container-->
+
+
+    <script type='text/javascript' src="js/javascript.js"></script>
+</body>
+</html>
