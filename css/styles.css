@@ -74,7 +74,7 @@ ul li{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 580px;
+    height: 600px;
     width: 100%;
     margin-top: 1.5em;
     animation: fadein 2.25s;
@@ -457,6 +457,10 @@ a:hover{
 
 /** Media Queries */
 @media screen and (max-width: 900px){
+        /* Don't show the slideshow */
+        .showProject{
+            display:none;
+        }
 }
 @media screen and (max-width: 800px){
 }
@@ -481,10 +485,6 @@ a:hover{
     textarea{
         width: 15em;
         height: 5em;
-    }
-    /* Don't show the slideshow */
-    .showProject{
-        display:none;
     }
 }
 @media screen and (max-width: 600px){
