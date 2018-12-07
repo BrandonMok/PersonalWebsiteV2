@@ -100,6 +100,7 @@ ul li{
 .about{
     display: flex;
     padding-top: 4em;
+    padding-bottom: 2em;
     margin-bottom: 5em;
 }
 
@@ -115,6 +116,7 @@ ul li{
     background-image: url("../images/profile.png");
     background-repeat: no-repeat;
     margin-left: 12em; 
+    z-index: 2.5em;
 }
 
 div .aboutContent p{
@@ -127,6 +129,7 @@ div .aboutContent p{
 /** Projects */
 .projects{
     margin-bottom: 4em; 
+    padding-top: 2em;
     padding-bottom: 2em;
     background-color: #F7F7F7;
 }
