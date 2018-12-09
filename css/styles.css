@@ -464,8 +464,7 @@ a:hover{
         .showProject{
             display:none;
         }
-}
-@media screen and (max-width: 800px){
+
         /* Don't show profile image */
         .profileIMG{
             display: none;
@@ -487,6 +486,11 @@ a:hover{
             width: 15em;
             height: 5em;
         }
+
+        
+}
+@media screen and (max-width: 800px){
+
 }
 @media screen and (max-width: 700px){
 
