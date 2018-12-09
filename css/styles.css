@@ -466,29 +466,30 @@ a:hover{
         }
 }
 @media screen and (max-width: 800px){
+        /* Don't show profile image */
+        .profileIMG{
+            display: none;
+        } 
+        /** Contact from section */
+        .contact{
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .contactME{
+            flex: 1 1 100%;
+        }
+        .contactForm{
+            flex: 1 1 100%;
+            margin: 0;
+            margin-top: .75em;
+        }
+        textarea{
+            width: 15em;
+            height: 5em;
+        }
 }
 @media screen and (max-width: 700px){
-    /* Don't show profile image */
-    .profileIMG{
-        display: none;
-    } 
-    /** Contact from section */
-    .contact{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .contactME{
-        flex: 1 1 100%;
-    }
-    .contactForm{
-        flex: 1 1 100%;
-        margin: 0;
-        margin-top: .75em;
-    }
-    textarea{
-        width: 15em;
-        height: 5em;
-    }
+
 }
 @media screen and (max-width: 600px){
     /** Hide the navigation */
