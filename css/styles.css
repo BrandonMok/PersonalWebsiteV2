@@ -216,6 +216,17 @@ div #tile5:hover{
     transform: scale(1.1); 
     box-shadow: 6px 6px #49bcfd;
 }
+#tile7{
+    background-color: #BAA5FF;
+}
+#tile7:hover{
+    font-size: 14pt;
+    font-weight: bold;
+    position: relative;
+    z-index: 5;
+    transform: scale(1.1); 
+    box-shadow: 6px 6px #a286fd;
+}
 
 
 
