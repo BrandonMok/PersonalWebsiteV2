@@ -111,12 +111,16 @@ ul li{
 }
 
 .profileIMG{
-    text-align: center;
     flex: 1 1 50%;
     background-image: url("../images/profile.png");
     background-repeat: no-repeat;
     margin-left: 12em; 
     z-index: 2.5em;
+    padding-bottom: 22em;
+}
+
+.fix{
+    height: 100%;
 }
 
 div .aboutContent p{
