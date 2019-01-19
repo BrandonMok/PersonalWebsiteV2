@@ -7,7 +7,7 @@
 *{
     padding: 0;
     margin: 0 auto;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;  
     font-size: 12pt;
 }
 
@@ -26,17 +26,15 @@
 }
 
 
-
 /* Heading */
 .heading{
     font-size: 3em;
-    padding-bottom: .5em;
+    padding: .5em .5em .5em 0;
 }
 
 .textCenter{
     text-align: center;
 }
-
 
 
 
@@ -70,7 +68,7 @@ ul li{
 
 /** Background image for div */
 .backImage{
-    background-image: url(../images/homepage.jpg);
+    background-image: url(../images/homepage.jpg); /* @author unsplash , royalty free */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -129,14 +127,12 @@ div .aboutContent p{
 /** Projects */
 .projects{
     margin-bottom: 4em; 
-    padding-top: 2em;
-    padding-bottom: 2em;
-    background-color: #F7F7F7;
+    padding: 2em 0;
+    background-color: #f7f7f7;
 }
 
 .tilesContainer{
-    margin-left: 3em;
-    margin-right: 3em;
+    margin: 0 3em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -144,10 +140,10 @@ div .aboutContent p{
 
 .aTile{
     flex: 1 1 50%;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding: 3em 0;
     text-align: center;
 }
+
 
 
 #tile1{
@@ -277,7 +273,7 @@ input[type=submit]{
 
 /** Footer */
 footer{
-    background-color: #E8E8E8;
+    background-color: #f7f7f7;
     text-align: center;
     position: relative;
     bottom: 0;
@@ -395,9 +391,8 @@ footer{
 .projectContent{ /** Information about project */
     flex: 1 1 50%;
 }
-
-.project .projectContent p{
-    padding: 1em;
+.projectContent p{
+    padding-bottom: .75em;
 }
 
 .showProject{ /** Slideshow container */
@@ -523,7 +518,5 @@ a:hover{
 @media screen and (max-width: 600px){
 }
 @media screen and (max-width: 500px){
-}
-@media screen and (max-width: 320px){
 }
 
