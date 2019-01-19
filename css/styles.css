@@ -30,6 +30,7 @@
 .heading{
     font-size: 3em;
     padding: .5em .5em .5em 0;
+    font-weight: 600;
 }
 
 .textCenter{
@@ -81,6 +82,7 @@ ul li{
 
 .imageText{
     color:white;
+    font-weight: 600;
     font-size: 100px;
     background: transparent;
     margin: 0;
@@ -281,6 +283,7 @@ footer{
 
 .hiring{ /** Hiring header */
     font-size: 18pt;
+    font-weight: 600;
     padding: .5em;
 }
 
@@ -313,7 +316,8 @@ footer{
 }
 
 .copyright{
-    padding-top: 1em;
+    font-weight: 600;
+    padding-top: 0;
     padding-bottom: 2em;
 }
 
