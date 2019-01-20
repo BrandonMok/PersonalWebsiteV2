@@ -135,7 +135,7 @@ div .aboutContent p{
 }
 
 .aTile{ /* each individual tile */
-    flex: 1 1 50%;
+    flex: 1 1 30%;
     padding: 3em 0;
     text-align: center;
 }
@@ -157,7 +157,7 @@ div #tile1:hover{
     box-shadow: 6px 6px #0b98d5;
 }
 #tile2{
-    background-color: #F9627D;
+    background-color: #EF5D60;
 }
 div #tile2:hover{
     font-size: 14pt;
@@ -295,6 +295,7 @@ footer{
     display: inline-block;
     border: #555555 solid;
     background-color: #f7f7f7;
+    border-radius: 1em;
     padding: 1em;
     margin-bottom: 1em;
     font-size: 12pt;
