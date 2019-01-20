@@ -19,17 +19,16 @@
 
 /* Logo */
 .logo{
-    display: inline;
-    padding-top: .25em;
-    padding-left: 5em;    
-    height: 60px;
+    display: inline-block;
+    padding: .25em 0 0 5em;
+    height: 70px; /* Specify a height because scaling loses quality */
 }
 
 
 /* Heading */
 .heading{
     font-size: 3em;
-    padding: .5em .5em .5em 0;
+    padding: .5em .5em .5em 0; 
     font-weight: 600;
 }
 
@@ -53,14 +52,12 @@
 
 div ul{
     float: right;
-    padding-top: 1em;
 }
 
 ul li{
     display: inline-block;
     padding: 1.25em;
     font-size: 14pt;
-    text-decoration: none;
     list-style-type: none;
 }
 
@@ -77,7 +74,6 @@ ul li{
     width: 100%;
     margin-top: 1.5em;
     animation: fadein 2.25s;
-    margin-bottom: 2em;
 }
 
 .imageText{
@@ -85,10 +81,10 @@ ul li{
     font-weight: 600;
     font-size: 100px;
     background: transparent;
-    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
+    margin: 0;
     margin-right: -50%;
     transform: translate(-50%, -50%); /* slides it over */
 }
@@ -99,14 +95,12 @@ ul li{
 /** About */
 .about{
     display: flex;
-    padding-top: 4em;
-    padding-bottom: 2em;
-    margin-bottom: 5em;
+    padding: 4em 0;
+    margin: 3em;
 }
 
 .aboutContent{
     text-align: center;
-    padding-left: 2em;
     flex: 1 1 50%;
 }
 
@@ -114,8 +108,8 @@ ul li{
     flex: 1 1 50%;
     background-image: url("../images/profile.png");
     background-repeat: no-repeat;
-    margin-left: 12em; 
     z-index: 2em;
+    margin-left: 12em; 
     padding-bottom: 22em;
 }
 
@@ -134,19 +128,22 @@ div .aboutContent p{
 }
 
 .tilesContainer{
-    margin: 0 3em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 3em;
 }
 
-.aTile{
+.aTile{ /* each individual tile */
     flex: 1 1 50%;
     padding: 3em 0;
     text-align: center;
 }
 
 
+#tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7{
+    font-weight: bold;
+}
 
 #tile1{
     background-color: #28b8f6;
@@ -235,7 +232,7 @@ div #tile5:hover{
 /** Contact */
 .contact{ /** Contact section container */
     display: flex;
-    padding-top: 4em;
+    padding-top: 3em;
     margin: 1em 3em 4em 3em;
 }
 
@@ -251,6 +248,7 @@ div #tile5:hover{
 form{ /** Actual Form */
     display: block;
     padding: 1em;
+    padding-bottom: 3em;
     background-color: #F5F5F5;
     border-radius: 1.2em;
 }
@@ -266,7 +264,9 @@ input{ /** Textfields */
 }
 
 input[type=submit]{
-    display: inline;
+    display: block;
+    position: absolute;
+    margin-top: .25em;
 }
 
 
@@ -293,37 +293,31 @@ footer{
 
 .resumeBtn{ /** Resume Button */
     display: inline-block;
-    border: #b8b8b8 solid;
-    background-color: #E8E8E8;
+    border: #555555 solid;
+    background-color: #f7f7f7;
     padding: 1em;
-    font-size: 12pt;
     margin-bottom: 1em;
+    font-size: 12pt;
 }
 
 .resumeBtn:hover{
     font-size: 13pt;
-    border: #8c8c8c solid;
+    font-weight: bold;
 }
 
-.social{ 
+.social{ /* Social container */
     padding: .5em;
 }
 
 .socialIcons{/** Social media Icons */
-    padding: 1em;
+    padding: 0 1em 1em 0;
     width: 2em;
     height: 2em;
 }
 
 .copyright{
     font-weight: 600;
-    padding-top: 0;
     padding-bottom: 2em;
-}
-
-.socialIcons:hover{
-    width: 3em;
-    height: 3em;
 }
 
 
@@ -332,7 +326,8 @@ footer{
 /** Responsive nav bar */
 /* Changes original to hamburger menu for viewports */
 #hamburger{
-    display:none;
+    display: none;
+    position: relative;
     left: 2em;
     font-size: 1.25em;
     cursor: pointer;
@@ -361,37 +356,34 @@ footer{
 }
 
 /* links inside overlay */
-.overlay-content {
-    position: relative;
-    top: 25%;
+.overlay-content{
+    position: absolute;
+    float: right;
+    top: 15%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
-    float: right;
-    color: 	#404040;
+    margin-top: 20px;
 }
 
 .overlay-content ul li a{
-    padding: 8px;
-    font-size: 32px;
-    text-align: center;
     display: block;
-    transition: 0.3s;
+    font-size: 38px;
+    text-align: center;
+    padding: 8px;
     color: #808080;
+    transition: 0.3s;
 }
 
 
 
 
 /** Styles for all projects in tiles */
+/** Actual individual projects */
 .project{
     display: flex;
-    margin: 5em 2em 4em 2em;
+    margin: 5em 2em 5em 2em; /* Push content down as nav is fixed */
 }
-.projectHeading{
-    font-size: 3em;
-    padding-bottom: .5em;
-}
+
 .projectContent{ /** Information about project */
     flex: 1 1 50%;
 }
@@ -409,9 +401,6 @@ footer{
     display: none;
 }
 
-.fixSlide{
-    padding-top: 13em;
-}
 
 .prev, .next{ /** Buttons */
     cursor: pointer;
@@ -459,8 +448,6 @@ a:hover{
 
 
 
-
-
 /** Fade */
 @keyframes fadein {  
     from { opacity: 0; }
@@ -468,34 +455,32 @@ a:hover{
 }
 
 
+
 /** Media Queries */
 @media screen and (max-width: 900px){
-        /* Don't show the slideshow */
-        .showProject{
-            display:none;
-        }
-
         /* Don't show profile image */
         .profileIMG{
             display: none;
         } 
+
+        /* Don't show the slideshow */
+        .showProject{
+            display:none;
+        }
 
         /** Contact from section */
         .contact{
             flex-wrap: wrap;
             flex-direction: column;
         }
-
         .contactME{
             flex: 1 1 100%;
         }
-
         .contactForm{
             flex: 1 1 100%;
             margin: 0;
             margin-top: .75em;
         }
-
         textarea{
             width: 15em;
             height: 5em;
