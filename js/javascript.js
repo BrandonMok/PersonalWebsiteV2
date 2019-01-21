@@ -1,6 +1,9 @@
 // Brandon Mok
 // Javascript
 
+
+// Navigation - Open & Close
+// Changes width of div to display
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
 }
@@ -30,6 +33,7 @@ function currentSlide(n){
 function showSlides(n){
     var i;
     var slides = document.getElementsByClassName("mySlides"); // Get all slides
+    
     if(n > slides.length){ // If over the # of slides
         slideIndex = 1;
     }
