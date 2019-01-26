@@ -1,7 +1,6 @@
 // Brandon Mok
 // Javascript
 
-
 // Navigation - Open & Close
 // Changes width of div to display
 function openNav() {
