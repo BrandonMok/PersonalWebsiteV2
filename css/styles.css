@@ -129,7 +129,6 @@ ul li{
 .subText{
     font-size: 1.5em;
     top: 50%;
-    left: 50%;
     margin: 1em;
 }
 .imageText, .subText{ /** Styles for both text classes */
@@ -138,7 +137,8 @@ ul li{
     background: transparent;
     position: absolute;
     margin-right: -50%;
-    transform: translate(-50%, -50%); slides it over
+    left: 50%;
+    transform: translate(-50%, -50%); 
 }
 
 
@@ -208,6 +208,7 @@ div #tile1:hover{
     z-index: 5;
     transform: scale(1.1);
     box-shadow: 6px 6px #0b98d5;
+    
 }
 #tile2{
     background-color: #EF5D60;
