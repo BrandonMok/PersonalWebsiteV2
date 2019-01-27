@@ -109,7 +109,7 @@ ul li{
 
 /** Background image for div */
 .backImage{
-    background-image: url(../images/homepage.jpg); @author unsplash , royalty free
+    background-image: url(../images/homepage.jpg); /** @author unsplash , royalty free */
     /* background-image: url(../images/black-and-white-black-and-white-blur-34088.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
