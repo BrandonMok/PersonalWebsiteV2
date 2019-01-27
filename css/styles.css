@@ -115,6 +115,7 @@ ul li{
     height: 700px;
     width: 100%;
     animation: fadein 2.25s;
+    position: relative;
 }
 
 /** Text on homepage image */
