@@ -20,14 +20,21 @@
 
 /** logo */
 .logo{
-    background-image: url(../images/myLogo-FullTransparent.png);
+    background-image: url("../images/myLogo-invert.png");
+}
+.logoAlt{  /** Logo for all other pages */
+    background-image: url("../images/myLogo-transparent.png"); 
+}
+.logo, .logoAlt{
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
     height: 4.5em;
     width: 4.5em;
     margin-left: 4.5em;
+    margin-top: .3em;
 }
+
 
 
 /* Heading */
@@ -35,6 +42,7 @@
     font-size: 3em;
     padding: .5em .5em .5em 0; 
     font-weight: 600;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 .textCenter{
@@ -56,16 +64,22 @@
 
 
 /** Navigation */
-.navigation{
+/** navigationOther is for all other pages */
+/* Problem: Having one class for all would show original white
+* background for homepage on load
+*/
+.navigation, .navigationAlt{
     display: inline;
     position: fixed;
-    background-color: white;
-    /* background-color: transparent; */
     width: 100%;
     top: 0;
     min-height: 59px;
     z-index: 10; 
+}
+/** Nav for all other pages besides homepage */
+.navigationAlt{
     box-shadow: 0 4px 10px rgba(0,0,0,.16);
+    background-color: white;
 }
 
 div ul{
@@ -74,43 +88,27 @@ div ul{
 
 ul li{
     display: inline-block;
-    padding: 1.25em;
+    padding: 1.3em;
     font-size: 14pt;
     list-style-type: none;
 }
-
-/* .firstNav li a{
+/* Original Nav link color */
+.firstNav li a{
     color: white;
-} */
-
-
-
-/* .scrolled{
-    background-color: white;
-    transition: .3s all;
-} */
-
-/* .logoAfter{
-    background-image: url(../images/myLogo-FullTransparent.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
-    height: 4.5em;
-    width: 4.5em;
-    margin-left: 4.5em;
-} */
+    font-family: 'Noto Sans TC', sans-serif;
+}
+/** Nav link color for all other pages */
+#link li a{
+    color: black;
+    font-family: 'Noto Sans TC', sans-serif;
+}
 
 
 
 
-
-
-
-
-/** Background image for div */
+/** Background image for homepage div */
 .backImage{
-    background-image: url(../images/homepage.jpg); /** @author unsplash , royalty free */
-    /* background-image: url(../images/black-and-white-black-and-white-blur-34088.jpg); */
+    background-image: url(../images/homepage2.jpg); /** @author unsplash, royalty free */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -119,18 +117,29 @@ ul li{
     animation: fadein 2.25s;
 }
 
+/** Text on homepage image */
 .imageText{
-    color:white;
     font-weight: 600;
-    font-size: 100px;
-    background: transparent;
-    position: absolute;
+    font-size: 7em;
     top: 50%;
     left: 50%;
     margin: 0;
+}
+.subText{
+    font-size: 1.5em;
+    top: 65%;
+    left: 50%;
+    margin: 1em;
+}
+.imageText, .subText{ /** Styles for both text classes */
+    font-family: 'Noto Sans TC', sans-serif;
+    color: white;
+    background: transparent;
+    position: absolute;
     margin-right: -50%;
     transform: translate(-50%, -50%); /* slides it over */
 }
+
 
 
 
@@ -325,9 +334,10 @@ footer{
 }
 
 .hiring{ /** Hiring header */
-    font-size: 18pt;
+    font-size: 20pt;
     font-weight: 600;
     padding: .5em;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 .footerText{
@@ -375,6 +385,7 @@ footer{
     left: 2em;
     font-size: 1.25em;
     cursor: pointer;
+    color: white;
 }
 
 .closebtn{
@@ -528,6 +539,10 @@ a:hover{
         textarea{
             width: 15em;
             height: 5em;
+        }
+        /** Subtext on homepage imgae */
+        .subText{
+            font-size: 1em;
         }
 }
 @media screen and (max-width: 800px){

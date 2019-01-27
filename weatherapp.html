@@ -6,29 +6,31 @@
     <title>BM | React Weather App</title>
     <link rel="stylesheet" href="css/styles.css"><!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"><!-- Font -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"><!-- Favicon -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" sizes="32x32">
 </head>
 <body>
     <!-- Container -->
     <div class ="container">
 
         <!-- Navigation -->
-        <div class="navigation">
+        <div class="navigationAlt">
             <!-- Hamburger for responsiveness (initially not shown) -->
             <span id="hamburger" onclick="openNav()">&#9776;</span>
 
             <!-- Logo -->
-            <a href="index.html" class="logoHover">
-                <img src="./images/myLogo.png" class="logo" name="logo" alt="logo">
+            <a href="index.html">
+                <div class="logoAlt"></div>
             </a>
 
             <!-- Original Navigation!-->
-            <ul class="firstNav">
+            <ul class="firstNav" id="link">
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#projects">Projects</a></li>
                 <li><a href="index.html#resume">Resume</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
+
 
             <!-- For responsive -->
             <!-- Orignally not shown -->
