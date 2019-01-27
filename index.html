@@ -176,12 +176,14 @@
 
                     if (scroll >= about - 100) { // Changes at the point
                         nav.css("background-color","white");
+                        nav.css("transition","0.3s all");
                         logo.css("background-image", "url(images/myLogo-transparent.png)");
                         navLinks.css("color","black")
                         nav.css("box-shadow", "0 4px 10px rgba(0,0,0,.16)");
                         hamburger.css("color","black");
                     } else { // original
                         nav.css("background-color","transparent");
+                        nav.css("transition","0.2s all");
                         logo.css("background-image", "url(images/myLogo-invert.png)");
                         navLinks.css("color","white")
                         nav.css("box-shadow", "none");
