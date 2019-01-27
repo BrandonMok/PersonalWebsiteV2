@@ -20,7 +20,7 @@
 
 /** logo */
 .logo{
-    background-image: url(../images/myLogo.png);
+    background-image: url(../images/myLogo-FullTransparent.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
@@ -80,13 +80,26 @@ ul li{
 }
 
 /* .firstNav li a{
-    color: white;;
+    color: white;
 } */
+
+
 
 /* .scrolled{
     background-color: white;
     transition: .3s all;
 } */
+
+/* .logoAfter{
+    background-image: url(../images/myLogo-FullTransparent.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 4.5em;
+    width: 4.5em;
+    margin-left: 4.5em;
+} */
+
 
 
 
@@ -96,8 +109,8 @@ ul li{
 
 /** Background image for div */
 .backImage{
-    /* background-image: url(../images/homepage.jpg); @author unsplash , royalty free */
-    background-image: url(../images/homepage.jpg);
+    background-image: url(../images/homepage.jpg); @author unsplash , royalty free
+    /* background-image: url(../images/black-and-white-black-and-white-blur-34088.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
