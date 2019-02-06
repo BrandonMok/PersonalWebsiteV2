@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css"><!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png" sizes="32x32"><!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" sizes="32x32">
     <script type='text/javascript' src="js/javascript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -121,13 +121,13 @@
             </div>
             <!-- Contact Form-->
             <div class="contactForm">
-                <form name="contact" method="POST" action="" netlify>
+                <form name="contact" method="POST" action="" onsubmit="doAlert()" netlify>
                     <span class="formSpan">Name:</span><input type="text" name="name" required><br>
                     <span class="formSpan">Subject:</span><input type="text" name="subject" required><br>
                     <span class="formSpan">Email:</span><input type="email" name="email" required><br>
                     <span class="formSpan">Message:</span><br>
                     <textarea name="message" rows="4" cols="40" placeholder="Message"></textarea>
-                    <input type="submit" value="Send" id="subBtn" onsubmit="doAlert()">
+                    <input type="submit" value="Send" id="subBtn">
                 </form>
             </div>
         </div><!-- End of contact -->

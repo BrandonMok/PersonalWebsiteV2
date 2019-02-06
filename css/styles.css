@@ -8,7 +8,6 @@
     padding: 0;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;  
-    font-size: 12pt;
     scroll-behavior: smooth;
 }
 
@@ -39,7 +38,7 @@
 
 /* Heading */
 .heading{
-    font-size: 3em;
+    font-size: 3rem;
     padding: .5em .5em .5em 0; 
     font-weight: 600;
     font-family: 'Noto Sans TC', sans-serif;
@@ -93,9 +92,9 @@ div ul{
 
 ul li{
     display: inline-block;
-    padding: 1.3em;
-    font-size: 14pt;
     list-style-type: none;
+    padding: 1.3em;
+    font-size: 1.05rem;;
 }
 /* Original Nav link color */
 .firstNav li a{
@@ -117,7 +116,7 @@ ul li{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 700px;
+    height: 710px;
     width: 100%;
     animation: fadein 2.25s;
     position: relative;
@@ -126,15 +125,15 @@ ul li{
 /** Text on homepage image */
 .imageText{
     font-weight: 600;
-    font-size: 7em;
+    font-size: 7rem;
     top: 40%;
     left: 50%;
     margin: 0;
 }
 .subText{
-    font-size: 1.5em;
     top: 50%;
     margin-top: 1em;
+    font-size: 1.5rem;
 }
 .imageText, .subText{ /** Styles for both text classes */
     font-family: 'Noto Sans TC', sans-serif;
@@ -180,8 +179,8 @@ div .aboutContent p{
 
 /** Projects */
 .projects{
-    margin-bottom: 4em; 
     padding: 2em 0;
+    margin: 3em;
     background-color: #f7f7f7;
 }
 
@@ -291,8 +290,9 @@ div #tile5:hover{
 /** Contact */
 .contact{ /** Contact section container */
     display: flex;
-    padding-top: 3em;
-    margin: 1em 3em 4em 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: 3em;
 }
 
 .contactMe{ /** Content Div */
