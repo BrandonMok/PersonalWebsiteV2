@@ -112,11 +112,11 @@ ul li{
 
 /** Background image for homepage div */
 .backImage{
-    background-image: url(../images/homepage2.jpg); /** @author unsplash, royalty free */
+    background-image: url(../images/seth-schwiet-40984-unsplash.jpg); /** @author unsplash, royalty free */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 710px;
+    height: 730px;
     width: 100%;
     animation: fadein 2.25s;
     position: relative;
