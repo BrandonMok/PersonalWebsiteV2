@@ -312,7 +312,8 @@ form{ /** Actual Form */
     border-radius: 1.2em;
 }
 .formLabel{
-    display: block;
+    display: inline-block;
+    width: 6em;
 }
 
 
@@ -544,7 +545,7 @@ a:hover{
             margin-top: .75em;
         }
         textarea{
-            width: 15em;
+            width: 18em;
             height: 5em;
         }
         /** Subtext on homepage imgae */
@@ -553,6 +554,10 @@ a:hover{
         }
 }
 @media screen and (max-width: 800px){
+    textarea{
+        width: 15em;
+        height: 5em;
+    }
 }
 @media screen and (max-width: 700px){
     /** Hide the original navigation */
