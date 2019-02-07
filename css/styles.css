@@ -110,13 +110,13 @@ ul li{
 
 
 
-/** Background image for homepage div */
-.backImage{
+/** Landing image on homepage */
+.landingImage{
     background-image: url(../images/seth-schwiet-40984-unsplash.jpg); /** @author unsplash, royalty free */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 730px;
+    height: 750px;
     width: 100%;
     animation: fadein 2.25s;
     position: relative;
@@ -166,7 +166,7 @@ ul li{
     background-image: url("../images/profile.png");
     background-repeat: no-repeat;
     z-index: 2em;
-    margin-left: 12em; 
+    margin-left: 15em; 
     padding-bottom: 22em;
 }
 
@@ -311,10 +311,10 @@ form{ /** Actual Form */
     background-color: #F5F5F5;
     border-radius: 1.2em;
 }
-
-.formSpan{
+.formLabel{
     display: block;
 }
+
 
 input{ /** Textfields */
     display: inline-block;
