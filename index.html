@@ -68,7 +68,7 @@
         <div class="about" id="about">
             <!-- About Me-->
             <div class="aboutContent">
-                <p class="heading">Hello!</p>
+                <p class="heading">Hello</p>
                 <p>I'm Brandon Mok and, I'm a software developer
                     majoring in Web & Mobile Computing (WMC) at 
                     Rochester Institute of Technology.
@@ -121,12 +121,12 @@
             </div>
             <!-- Contact Form-->
             <div class="contactForm">
-                <form name="contact" method="POST" action="" onsubmit="doAlert()" netlify>
-                    <span class="formLabel">Name:</span><input type="text" name="name" required><br>
-                    <span class="formLabel">Subject:</span><input type="text" name="subject" required><br>
-                    <span class="formLabel">Email:</span><input type="email" name="email" required><br>
+                <form name="contact" method="POST" onsubmit="return val();" netlify>
+                    <span class="formLabel">Name:</span><input type="text" name="name" id="fullName" onclick="updateField(this);"><br/>
+                    <span class="formLabel">Subject:</span><input type="text" name="subject" id="subject" onclick="updateField(this);"><br/>
+                    <span class="formLabel">Email:</span><input type="email" name="email" id="email" onclick="updateField(this);"><br/>
                     <span class="formLabel">Message:</span><br>
-                    <textarea name="message" rows="4" cols="40" placeholder="Message"></textarea>
+                    <textarea name="message" rows="5" cols="60" placeholder="Message"></textarea>
                     <input type="submit" value="Send" id="subBtn">
                 </form>
             </div>

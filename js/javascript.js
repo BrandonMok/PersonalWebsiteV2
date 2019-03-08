@@ -18,6 +18,44 @@ function doAlert(){
 }
 
 
+function val(){
+    var validateFlag = true;
+
+    // Checking if the fields are empty, if so don't allow the form to submit
+    if(document.getElementById('fullName').value == ""){
+        document.getElementById('fullName').style.backgroundColor="#EF5C51";
+        validateFlag = false;
+    }
+    if(document.getElementById('subject').value == ""){
+        document.getElementById('subject').style.backgroundColor="#EF5C51";
+        validateFlag = false;
+    }
+    if(document.getElementById('email').value == ""){
+        document.getElementById('email').style.backgroundColor="#EF5C51";
+        validateFlag = false;
+    }
+
+    if(validateFlag == true){
+        doAlert();
+    }
+
+    return validateFlag;
+}
+
+
+/**
+ * updateField
+ * Updated the form inputs depending if has user input
+ */
+function updateField(dom){
+    dom.style.backgroundColor="#EF5C51";
+
+    if(dom.value == ""){
+        dom.style.backgroundColor="#FFFFFF";
+    }
+}
+
+
 
 /** Slide show */
 var slideIndex = 1;
