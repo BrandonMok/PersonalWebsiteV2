@@ -108,15 +108,13 @@ ul li{
 }
 
 
-
-
 /** Landing image on homepage */
 .landingImage{
     background-image: url(../images/seth-schwiet-40984-unsplash.jpg); /** @author unsplash, royalty free */
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
-    width: 100%;
+    width: 100%; 
     animation: fadein 2.25s;
 }
 
