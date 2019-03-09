@@ -110,28 +110,17 @@
         </div><!-- End of projects-->
 
 
-
         <!-- Contact -->
-        <div class="contact" id="contact">
-            <!-- Contact Content -->
-            <div class="contactMe">
-                <p class="heading">Contact</p>
-                <p>Interested in my work or want to collaborate together?
-                    Feel free to get in touch by filling out this form!
-                </p>
-            </div>
-            <!-- Contact Form-->
-            <div class="contactForm">
-                <form name="contact" method="POST" onsubmit="return val();" netlify>
-                    <span class="formLabel">Name:</span><input type="text" name="name" id="fullName" onclick="updateField(this);"><br/>
-                    <span class="formLabel">Subject:</span><input type="text" name="subject" id="subject" onclick="updateField(this);"><br/>
-                    <span class="formLabel">Email:</span><input type="email" name="email" id="email" onclick="updateField(this);"><br/>
-                    <span class="formLabel">Message:</span><br>
-                    <textarea name="message" rows="5" cols="60" placeholder="Message"></textarea>
-                    <input type="submit" value="Send" id="subBtn">
-                </form>
-            </div>
-        </div><!-- End of contact -->
+        <div id="contactContainer">
+            <p class="heading" id="contact">Contact</p>
+            <form method="POST" onsubmit="return val()" netlify>
+                <input type="text" name="name" placeholder="Your Name" id="name" onchange="updateField(this);" />
+                <input type="text" name="email" placeholder="Your Email" id="email" onchange="updateField(this);" />
+                <input type="text" name="subject" placeholder="Subject" id="subject" onchange="updateField(this);" />
+                <textarea placeholder="Your message" id="message" onchange="checkMessage(this);"></textarea>
+                <input type="submit" id="submitBtn"/>
+            </form>
+        </div>
 
 
 

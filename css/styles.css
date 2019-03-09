@@ -110,7 +110,7 @@ ul li{
 
 /** Landing image on homepage */
 .landingImage{
-    background-image: url(../images/homepage.jpg); /** @author unsplash, royalty free */
+    background-image: url(../images/homepage.jpg); /** @author Lucas bravo unsplash, royalty free */
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -282,52 +282,38 @@ div #tile5:hover{
 
 
 
-
-
-
-/** Contact */
-.contact{ /** Contact section container */
-    display: flex;
-    padding-top: 2em;
-    padding-bottom: 2em;
+/** Contact - Form */
+#contactContainer{
+    text-align: center;
+    justify-content: center;
     margin: 3em;
+    margin-bottom: 6em;
 }
-
-.contactMe{ /** Content Div */
-    flex: 1 1 50%;
-}
-
-.contactForm{ /** Form Div */
-    flex: 1 1 50%;
-    margin-left: 2em; /** Keep the div from touching right side */
-}
-
-form{ /** Actual Form */
+form input, form textarea{
     display: block;
-    padding: 1em;
-    padding-bottom: 3em;
-    background-color: #F5F5F5;
-    border-radius: 1.2em;
+    width: 30em;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border: 2px solid #888888;
 }
-.formLabel{
+form textarea{
+    height: 4em;
+    margin-bottom: 2em;
+}
+#submitBtn{
+    width: 20em;
+    color: white;
+    background-color: rgb(87, 95, 107);
     font-weight: bold;
     font-size: 1rem;
-    display: inline-block;
-    width: 6em;
+    border: 2px solid darkgrey;
+}
+#submitBtn:hover{
+    cursor: pointer;
+    font-size: 1.05rem;
 }
 
 
-input{ /** Textfields */
-    display: inline-block;
-    padding-bottom: .25em;
-    margin-bottom: 1em;
-}
-
-input[type=submit]{
-    display: block;
-    position: absolute;
-    margin-top: .25em;
-}
 
 
 
@@ -531,33 +517,12 @@ a:hover{
             display:none;
         }
 
-        /** Contact from section */
-        .contact{
-            flex-wrap: wrap;
-            flex-direction: column;
-        }
-        .contactME{
-            flex: 1 1 100%;
-        }
-        .contactForm{
-            flex: 1 1 100%;
-            margin: 0;
-            margin-top: .75em;
-        }
-        textarea{
-            width: 18em;
-            height: 5em;
-        }
         /** Subtext on homepage imgae */
         .subText{
             font-size: 1em;
         }
 }
 @media screen and (max-width: 800px){
-    textarea{
-        width: 15em;
-        height: 5em;
-    }
 }
 @media screen and (max-width: 700px){
     /** Hide the original navigation */
@@ -574,8 +539,38 @@ a:hover{
         display: inline-block;
         position: relative;  
     }
+
 }
 @media screen and (max-width: 600px){
+    /** Contact form styling */
+    #contactContainer{
+        margin: 0;
+        margin-bottom: 5em;
+    }
+    form input, form textarea{
+        width: 15em;
+        padding: 1em;
+    }
+    #submitBtn{
+        font-size: .8rem;
+        width: 12em;
+    }
+    #submitBtn:hover{
+        font-size: .85rem;
+    }
+
+    /** Projects tiles */
+    .projects{
+        margin: 0;
+    }
+    #tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7{
+        flex: 1 1 100%;
+        padding: 1.5em;
+    }
+    .tilesContainer{
+        margin: 0;
+        padding: 0;
+    }
 }
 @media screen and (max-width: 500px){
 }
