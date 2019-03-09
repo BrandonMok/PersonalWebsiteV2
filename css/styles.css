@@ -110,7 +110,7 @@ ul li{
 
 /** Landing image on homepage */
 .landingImage{
-    background-image: url(../images/seth-schwiet-40984-unsplash.jpg); /** @author unsplash, royalty free */
+    background-image: url(../images/homepage.jpg); /** @author unsplash, royalty free */
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
