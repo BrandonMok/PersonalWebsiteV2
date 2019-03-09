@@ -113,12 +113,12 @@ ul li{
     background-image: url(../images/seth-schwiet-40984-unsplash.jpg); /** @author unsplash, royalty free */
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
-    width: 100%; 
+    height: 100vh;
     animation: fadein 2.25s;
 }
 
 /** Text on homepage image */
+/* "HI." */
 .imageText{
     font-weight: 600;
     font-size: 7rem;
@@ -126,6 +126,8 @@ ul li{
     left: 50%;
     margin: 0;
 }
+/** SubText on homepage */
+/* "Brandon Mok | Web Developer */
 .subText{
     top: 50%;
     margin-top: 1em;
