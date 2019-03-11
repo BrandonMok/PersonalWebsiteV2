@@ -11,6 +11,22 @@
     scroll-behavior: smooth;
 }
 
+/** Anchor tags */
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+
 /* Container */
 .container{
     padding: 0;
@@ -66,7 +82,6 @@
 
 
 
-
 /** Navigation */
 /** navigationOther is for all other pages */
 /* Problem: Having one class for all would show original white
@@ -86,11 +101,11 @@
     background-color: white;
 }
 
-div ul{
+ul{
     float: right;
 }
 
-ul li{
+div ul li{
     display: inline-block;
     list-style-type: none;
     padding: 1.3em;
@@ -106,6 +121,7 @@ ul li{
     color: black;
     font-family: 'Noto Sans TC', sans-serif;
 }
+
 
 
 /** Landing image on homepage */
@@ -145,29 +161,28 @@ ul li{
 
 
 
-
-
 /** About */
 .about{
     display: flex;
     padding: 4em 0;
-    margin: 3em;
+    margin: 2em;
 }
-
 .aboutContent{
+    /* position: relative;
+    left: 0; */
     text-align: center;
     flex: 1 1 50%;
 }
-
 .profileIMG{
     flex: 1 1 50%;
+    /* position: relative;
+    right: 0; */
     background-image: url("../images/profile.png");
     background-repeat: no-repeat;
     z-index: 2em;
     margin-left: 15em; 
     padding-bottom: 22em;
 }
-
 div .aboutContent p{
     padding: .5em;
 }
@@ -176,6 +191,7 @@ div .aboutContent p{
 
 
 /** Projects */
+/** TO BE REDONE... EVENTUALLY */
 .projects{
     padding: 2em 0;
     margin: 3em;
@@ -194,7 +210,6 @@ div .aboutContent p{
     padding: 3em 0;
     text-align: center;
 }
-
 
 #tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7{
     font-weight: bold;
@@ -282,11 +297,14 @@ div #tile5:hover{
 
 
 
+
+
+
 /** Contact - Form */
 #contactContainer{
     text-align: center;
     justify-content: center;
-    margin: 3em;
+    margin: 2em;
     margin-bottom: 6em;
 }
 form input, form textarea{
@@ -379,9 +397,9 @@ footer{
     left: 2em;
     font-size: 1.25em;
     cursor: pointer;
-    color: white;
+    color: black;
 }
-
+/** Close button in the 2nd menu */
 .closebtn{
     display:none; 
     font-size: 4em;
@@ -403,7 +421,6 @@ footer{
     transition: 0.5s;
     background-color: white;
 }
-
 /* links inside overlay */
 .overlay-content{
     position: absolute;
@@ -413,7 +430,7 @@ footer{
     text-align: center;
     margin-top: 20px;
 }
-
+/* Over lay links */
 .overlay-content ul li a{
     display: block;
     font-size: 38px;
@@ -426,73 +443,74 @@ footer{
 
 
 
-/** Styles for all projects in tiles */
-/** Actual individual projects */
-.project{
-    display: flex;
-    margin: 5em 2em 5em 2em; /* Push content down as nav is fixed */
-}
 
-.projectContent{ /** Information about project */
+/** Each individual project */
+.projectINDV{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 6em 8em;
+}
+.projectContent{
     flex: 1 1 50%;
 }
-.projectContent p{
-    padding-bottom: .75em;
+.skillsUsed{
+    flex: 1 1 25%;
+    margin-top: 2em;
+    margin-left: 3em;
+    height: 20em;
+    border-radius: 1em;
+    background-color: rgb(233, 232, 232);
+    overflow: hidden;
+}
+.skillText{ /* Text in the project 'skills used' */
+    padding: 1em;
+    font-size: 2rem;
+    font-weight: bold;
+}
+ol li{
+    margin-left: 3em;
+    padding: .5em;
+    list-style-type: square;
+    font-size: 1.1rem;
 }
 
-.showProject{ /** Slideshow container */
-    /* flex: 1 1 50%; */
-    margin: 1.5em;
+.showProject{ 
     position: relative;
+    margin-top: 5em;
+    border: 5px solid rgb(179, 179, 179);
+    border-radius: .5em;
 }
 
-.mySlides{ /** Don't show all images initially */
-    display: none;
+.mySlides{
+    display: none;  /* display: block; */
 }
-
-
-.prev, .next{ /** Buttons */
+.prev, .next{ 
     cursor: pointer;
     position: absolute;
     top: 50%;
     margin-top: -22px;
     padding: 16px;
-    color: rgb(128, 128, 128);
+    color: rgb(46, 255, 203);
+    background-color: rgba(94, 94, 94, 0.534);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     transition: .5s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-
 .next{
     right: 0;
     border-radius: 0 3px 3px 0;
 }
-
 .prev:hover, .next:hover{
     background-color: rgba(0,0,0,0.8);
-}
+} 
 
 
 
 
 
-
-/** Anchor tags */
-a{
-    color: black;
-    text-decoration: none;
-}
-
-a:visited{
-    color: black;
-    text-decoration: none;
-}
-
-a:hover{
-    font-weight: bold;
-}
 
 
 
@@ -505,22 +523,53 @@ a:hover{
 
 
 
+
 /** Media Queries */
+@media screen and (max-width: 1000px){
+    /* Card container */
+    /* Display flex to allow stacking */
+    .cardCont{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
 @media screen and (max-width: 900px){
-        /* Don't show profile image */
-        .profileIMG{
-            display: none;
-        } 
+    /* Don't show profile image */
+    .profileIMG{
+        display: none;
+    } 
 
-        /* Don't show the slideshow */
-        .showProject{
-            display:none;
-        }
+    /* Don't show the slideshow */
+    .showProject{
+        display:none;
+    }
+    .projectINDV{
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 2em;
+    }
+    .projectContent{
+        margin-bottom: 2em;
+    }
+    .skillsUsed{
+        margin: 1em 0;
+    } 
+    .skillList{
+        padding-bottom: 2em;
+    }
 
-        /** Subtext on homepage imgae */
-        .subText{
-            font-size: 1em;
-        }
+    .heading, .skillText{
+        margin-top: 1.5em;
+        font-size: 1.8rem;
+    }
+
+
+    /** Subtext on homepage imgae */
+    .subText{
+        font-size: 1em;
+    }
 }
 @media screen and (max-width: 800px){
 }
@@ -557,19 +606,6 @@ a:hover{
     }
     #submitBtn:hover{
         font-size: .85rem;
-    }
-
-    /** Projects tiles */
-    .projects{
-        margin: 0;
-    }
-    #tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7{
-        flex: 1 1 100%;
-        padding: 1.5em;
-    }
-    .tilesContainer{
-        margin: 0;
-        padding: 0;
     }
 }
 @media screen and (max-width: 500px){

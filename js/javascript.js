@@ -55,7 +55,7 @@ function val(){
  */
 function updateField(dom){
     if(dom.value != ""){
-        dom.style.backgroundColor="#90EE90";
+        dom.style.backgroundColor='';
         dom.style.border='';
     }
 
