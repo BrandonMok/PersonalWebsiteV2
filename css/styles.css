@@ -591,6 +591,12 @@ ol li{
 @media screen and (max-width: 600px){
     .about{
         padding: 0;
+        margin: 0;
+    }
+
+    .projects{
+        margin: 0;
+        padding: 0;
     }
 
 
