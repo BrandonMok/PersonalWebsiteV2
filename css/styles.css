@@ -526,14 +526,6 @@ ol li{
 
 /** Media Queries */
 @media screen and (max-width: 1000px){
-    /* Card container */
-    /* Display flex to allow stacking */
-    .cardCont{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-    }
 }
 @media screen and (max-width: 900px){
     /* Don't show profile image */
@@ -545,6 +537,7 @@ ol li{
     .showProject{
         display:none;
     }
+
     .projectINDV{
         flex-wrap: wrap;
         flex-direction: column;
@@ -559,7 +552,6 @@ ol li{
     .skillList{
         padding-bottom: 2em;
     }
-
     .heading, .skillText{
         margin-top: 1.5em;
         font-size: 1.8rem;
@@ -572,6 +564,12 @@ ol li{
     }
 }
 @media screen and (max-width: 800px){
+    .aTile{ /* each individual tile */
+        flex: 1 1 100%;
+    }
+    .tilesContainer{
+        margin: 0;
+    }
 }
 @media screen and (max-width: 700px){
     /** Hide the original navigation */
@@ -591,6 +589,11 @@ ol li{
 
 }
 @media screen and (max-width: 600px){
+    .about{
+        padding: 0;
+    }
+
+
     /** Contact form styling */
     #contactContainer{
         margin: 0;
