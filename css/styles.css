@@ -167,21 +167,23 @@ div ul li{
     padding: 4em 0;
     margin: 2em;
 }
+/* Container for about content - description s*/
 .aboutContent{
-    /* position: relative;
-    left: 0; */
-    text-align: center;
     flex: 1 1 50%;
 }
+.aboutContent p.heading{
+    text-align: center;
+}
+/* Div w/ profile picture */
 .profileIMG{
     flex: 1 1 50%;
-    /* position: relative;
-    right: 0; */
     background-image: url("../images/profile.png");
     background-repeat: no-repeat;
     z-index: 2em;
-    margin-left: 15em; 
-    padding-bottom: 22em;
+    height: 25em;
+    margin-top: 2em;
+    margin-left: 16em; 
+    /* padding-bottom: 22em; */
 }
 div .aboutContent p{
     padding: .5em;
@@ -589,11 +591,20 @@ ol li{
 
 }
 @media screen and (max-width: 600px){
+    /* About section - changing sizes */
     .about{
         padding: 0;
         margin: 0;
     }
+    .aboutContent p{
+        margin: 0 1em;
+        text-align: left;
+    }
+    .aboutContent p.heading{
+        text-align: center;
+    }
 
+    /* Project section */
     .projects{
         margin: 0;
         padding: 0;
