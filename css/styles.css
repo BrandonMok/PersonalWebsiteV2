@@ -347,7 +347,8 @@ footer{
     bottom: 0;
 }
 
-.hiring{ /** Hiring header */
+ /** Hiring header */
+.hiring{ 
     font-size: 20pt;
     font-weight: 600;
     padding: .5em;
@@ -358,31 +359,42 @@ footer{
     padding-bottom: 1em;
 }
 
-.resumeBtn{ /** Resume Button */
+/** Resume Button */
+.resumeBtn{ 
     display: inline-block;
-    border: #555555 solid;
+    border: 2px #555555 solid;
     background-color: #f7f7f7;
     border-radius: 1em;
     padding: 1em;
     margin-bottom: 1em;
     font-size: 12pt;
 }
-
 .resumeBtn:hover{
+    border: 3px solid #555555;
     font-size: 13pt;
     font-weight: bold;
 }
 
-.social{ /* Social container */
+
+
+
+/** Social media Icons */
+/* Social container */
+.social{ 
     padding: .5em;
 }
-
-.socialIcons{/** Social media Icons */
-    padding: 0 1em 1em 0;
-    width: 2em;
-    height: 2em;
+.socialIcons{
+    margin: .2em;
 }
-
+#linkedin, #github{
+    font-size: 2.5em;
+}
+#linkedin:hover{
+    color: #0077B5;
+}
+#github:hover{
+    color: #333333;
+}
 .copyright{
     font-weight: 600;
     padding-bottom: 2em;
