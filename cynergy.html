@@ -14,13 +14,10 @@
 <body>
     <!-- Container -->
     <div class ="container">
-
         <!-- Navigation -->
         <div class="navigationAlt">
-
             <!-- Hamburger for responsiveness (initially not shown) -->
             <span id="hamburger" onclick="openNav()">&#9776;</span>
-
             <!-- Logo -->
             <a href="index.html">
                 <div class="logo"></div>
@@ -28,22 +25,22 @@
             
             <!-- Original Navigation!-->
             <ul class="firstNav" id="link">
+                 <li><a href="index.html">Home</a></li>            
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#projects">Projects</a></li>
                 <li><a href="index.html#resume">Resume</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
 
-
             <!-- For responsive -->
             <!-- Orignally not shown -->
             <div id="myNav" class="overlay">
                 <!-- Close Button -->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
                 <!-- Actual links -->
                 <div class="overlay-content">
                     <ul>
+                        <li><a href="index.html" onclick="closeNav()">Home</a></li>
                         <li><a href="index.html#about" onclick="closeNav()">About</a></li>
                         <li><a href="index.html#projects" onclick="closeNav()">Projects</a></li>
                         <li><a href="index.html#resume" onclick="closeNav()">Resume</a></li>
@@ -51,7 +48,6 @@
                     </ul>
                 </div>
             </div><!-- End of myNav-->
-
         </div><!-- End of navigation -->
 
 
