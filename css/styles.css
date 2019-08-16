@@ -136,7 +136,7 @@ div ul li{
     color: white;
     display: inline-block;
     padding: .75em;
-    margin: .5em;
+    margin: 1em .5em;
     border: 3px solid white;
 }
 .landingImage-boxes:hover {
