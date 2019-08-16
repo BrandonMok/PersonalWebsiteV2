@@ -12,16 +12,10 @@
 }
 
 /** Anchor tags */
-a{
+a, a:visited{
     color: black;
     text-decoration: none;
 }
-
-a:visited{
-    color: black;
-    text-decoration: none;
-}
-
 a:hover{
     font-weight: bold;
 }
@@ -42,8 +36,8 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
-    height: 4.5em;
-    width: 4.5em;
+    height: 4em;
+    width: 4em;
     margin-left: 4.5em;
     margin-top: .3em;
 }
@@ -79,28 +73,19 @@ a:hover{
 
 
 /** Navigation */
-/** navigationOther is for all other pages */
-/* Problem: Having one class for all would show original white
-* background for homepage on load
-*/
-.navigation, .navigationAlt{
+.navigation {
     display: inline;
     position: fixed;
     width: 100%;
     top: 0;
     min-height: 59px;
-    z-index: 10; 
-}
-/** Nav for all other pages besides homepage */
-.navigationAlt{
-    box-shadow: 0 4px 10px rgba(0,0,0,.16);
-    background-color: white;
+    transition: 0.3s all;
+    z-index: 100;
 }
 
 ul{
     float: right;
 }
-
 div ul li{
     display: inline-block;
     list-style-type: none;
@@ -112,193 +97,128 @@ div ul li{
     color: white;
     font-family: 'Noto Sans TC', sans-serif;
 }
-/** Nav link color for all other pages */
-#link li a{
-    color: black;
-    font-family: 'Noto Sans TC', sans-serif;
-}
-
 
 
 /** Landing image on homepage */
 .landingImage{
-    background-image: url(../images/homepage.jpg); /** @author Eleven unsplash, royalty free */
+    background-image: url(../images/homepage.jpg); /* creator/author: aj garcia from Unsplash. Unsplash provides royalty free images */
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    animation: fadein 2.25s;
+    animation: fadein 1.5s;
 }
-
 /** Text on homepage image */
-/* "HI." */
-.imageText{
+.imageText {
     font-weight: 600;
     font-size: 3.5rem;
     top: 40%;
     left: 50%;
     margin: 0;
-}
-/** SubText on homepage */
-/* "Brandon Mok | Web Developer */
-.subText{
-    top: 50%;
-    margin-top: 1em;
-    font-size: 1.5rem;
-}
-.imageText, .subText{ /** Styles for both text classes */
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: white;
     background: transparent;
     position: absolute;
     margin-right: -50%;
-    left: 50%;
     transform: translate(-50%, -50%); 
+}
+/* Container to hold boxes for Github and Resume */
+.landingImage-box-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 1em;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.landingImage-boxes {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    display: inline-block;
+    padding: .75em;
+    margin: .5em;
+    border: 3px solid white;
+}
+.landingImage-boxes:hover {
+    font-weight: bold;
+    border: 3px solid #222222;
+    color: #222222;
 }
 
 
 
 /** About */
-.about{
+.about-container {
     display: flex;
-    padding: 4em 0;
+    padding: 3em 0;
     margin: 2em;
+    flex-direction: row;
 }
 /* Container for about content - description s*/
 .aboutContent{
     flex: 1 1 50%;
+    margin: 0 2em;
 }
 .aboutContent p.heading{
     text-align: center;
 }
-/* Div w/ profile picture */
-.profileIMG{
-    flex: 1 1 50%;
-    background-image: url("../images/profile.png");
-    background-repeat: no-repeat;
-    z-index: 2em;
-    height: 25em;
-    margin-top: 2em;
-    margin-left: 16em; 
-}
 div .aboutContent p{
     padding: .5em;
 }
-
+/* Div w/ profile picture */
+.profile-IMG-container{
+    flex: 1 1 50%;
+    z-index: 2em;
+    height: 25em;
+}
+#profile-IMG-div {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+#profile-IMG {
+    float: left;
+    position: relative;
+    left: -50%;
+}
 
 
 
 /** Projects */
-/** TO BE REDONE... EVENTUALLY */
 .projects{
-    padding: 2em 0;
-    margin: 3em;
+    padding: 1.5em 0;
+    margin: 2em;
     background-color: #f7f7f7;
 }
-
 .tilesContainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 3em;
 }
-
 .aTile{ /* each individual tile */
     flex: 1 1 30%;
-    padding: 3em 0;
+    margin: .5em;
+    padding: 1.5em 0;
     text-align: center;
+    border: 3px solid #222222;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
-
-#tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7{
+.visit-repo-text {
+    padding: 1em;
+    font-size: 1.15rem;
+    font-weight: 100;
+}
+.visit-repo-text:hover {
     font-weight: bold;
 }
 
-#tile1{
-    background-color: #28b8f6;
-}
-div #tile1:hover{
-    font-size: 14pt;
-    font-weight: bold;
-    position: relative;
-    z-index: 5;
-    transform: scale(1.1);
-    box-shadow: 6px 6px #0b98d5;
     
-}
-#tile2{
-    background-color: #EF5D60;
-}
-div #tile2:hover{
-    font-size: 14pt;
-    font-weight: bold;
-    position: relative;
-    z-index: 5;
-    transform: scale(1.1);  
-    box-shadow: 6px 6px #f75976;
-}
-#tile3{
-    background-color: #8FF7A7;
-}
-div #tile3:hover{
-    font-size: 14pt;
-    font-weight: bold;
-    position: relative;
-    z-index: 5;
-    transform: scale(1.1);
-    box-shadow: 6px 6px #46e26a;
-}
-#tile4{
-    background-color: #FF9B42;
-}
-div #tile4:hover{
-    font-size: 14pt;
-    font-weight: bold;
-    position: relative;
-    z-index: 5;
-    transform: scale(1.1);
-    box-shadow: 6px 6px #f98924 ;
-}
-#tile5{
-    background-color: #FFED66;
-}
-div #tile5:hover{
-    font-size: 14pt;
-    font-weight: bold;
-    position: relative;
-    z-index: 5;
-    transform: scale(1.1); 
-    box-shadow: 6px 6px #fee62f;
-}
-#tile6{
-    background-color: #A5D8FF;
-}
-#tile6:hover{
-    font-size: 14pt;
-    font-weight: bold;
-    position: relative;
-    z-index: 5;
-    transform: scale(1.1); 
-    box-shadow: 6px 6px #8CCDFF;
-}
-#tile7{
-    background-color: #BAA5FF;
-}
-#tile7:hover{
-    font-size: 14pt;
-    font-weight: bold;
-    position: relative;
-    z-index: 5;
-    transform: scale(1.1); 
-    box-shadow: 6px 6px #a286fd;
-}
-
-
-
-
-
 
 
 /** Contact - Form */
-#contactContainer{
+#contact-container{
     text-align: center;
     justify-content: center;
     margin: 2em;
@@ -309,7 +229,7 @@ form input, form textarea{
     width: 30em;
     padding: 1.5em;
     margin-bottom: 1em;
-    border: 2px solid #888888;
+    border: 2px solid #222222;
 }
 form textarea{
     height: 4em;
@@ -321,16 +241,13 @@ form textarea{
     background-color: rgb(87, 95, 107);
     font-weight: bold;
     font-size: 1rem;
-    border: 3px solid gray;
+    border: 3px solid #222222;
 }
 #submitBtn:hover{
     cursor: pointer;
     border: 3px solid #3d3d3d;
+    color: #222222;
 }
-
-
-
-
 
 
 
@@ -342,22 +259,9 @@ footer{
     bottom: 0;
 }
 
- /** Hiring header */
-.hiring{ 
-    font-size: 20pt;
-    font-weight: 600;
-    padding: .5em;
-    font-family: 'Noto Sans TC', sans-serif;
-}
-
-.footerText{
-    padding-bottom: 1em;
-}
-
-/** Resume Button */
 .resumeBtn{ 
     display: inline-block;
-    border: 3px #555555 solid;
+    border: 2px #555555 solid;
     background-color: #f7f7f7;
     border-radius: 1em;
     padding: 1em;
@@ -365,7 +269,7 @@ footer{
     font-size: 12pt;
 }
 .resumeBtn:hover{
-    border: 3px solid #222222;
+    border: 2px solid #222222;
     font-weight: bold;
 }
 
@@ -373,21 +277,23 @@ footer{
 
 
 /** Social media Icons */
-/* Social container */
-.social{ 
-    padding: .5em;
+.social-container { 
+    margin-top: 1em;
 }
 .socialIcons{
-    margin: .2em;
+    margin: 1.25em .75em .75em .75em;
 }
-#linkedin, #github{
+#linkedin, #github, #resume{
     font-size: 2.5em;
 }
 #linkedin:hover{
     color: #0077B5;
 }
 #github:hover{
-    color: #333333;
+    color: #222222;
+}
+#resume:hover {
+    color: #222222;
 }
 .copyright{
     font-weight: 600;
@@ -414,9 +320,7 @@ footer{
     float: right;
 }
 
-.myNav{
-    display: block;
-}
+
 
 /** After clicking hamburger */
 .overlay { 
@@ -432,7 +336,7 @@ footer{
 /* links inside overlay */
 .overlay-content{
     position: absolute;
-    float: right;
+    display: block;
     top: 15%;
     width: 100%;
     text-align: center;
@@ -443,83 +347,11 @@ footer{
     display: block;
     font-size: 38px;
     text-align: center;
+    float: right;
     padding: 8px;
     color: #808080;
     transition: 0.3s;
 }
-
-
-
-
-
-/** Each individual project */
-.projectINDV{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 6em 8em;
-}
-.projectContent{
-    flex: 1 1 50%;
-}
-.skillsUsed{
-    flex: 1 1 25%;
-    margin-top: 2em;
-    margin-left: 3em;
-    height: 20em;
-    border-radius: 1em;
-    background-color: rgb(233, 232, 232);
-    overflow: hidden;
-}
-.skillText{ /* Text in the project 'skills used' */
-    padding: 1em;
-    font-size: 2rem;
-    font-weight: bold;
-}
-ol li{
-    margin-left: 3em;
-    padding: .5em;
-    list-style-type: square;
-    font-size: 1.1rem;
-}
-
-.showProject{ 
-    position: relative;
-    margin-top: 5em;
-    border: 5px solid rgb(179, 179, 179);
-    border-radius: .5em;
-}
-
-.mySlides{
-    display: none;  /* display: block; */
-}
-.prev, .next{ 
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -22px;
-    padding: 16px;
-    color: #222222;
-    background-color: rgba(94, 94, 94, 0.534);
-    font-weight: bold;
-    font-size: 20px;
-    transition: .5s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-.next{
-    right: 0;
-    border-radius: 0 3px 3px 0;
-}
-.prev:hover, .next:hover{
-    background-color: rgba(0,0,0,0.8);
-} 
-
-
-
-
-
-
 
 
 
@@ -530,53 +362,25 @@ ol li{
 }
 
 
-
-
 /** Media Queries */
 @media screen and (max-width: 1000px){
 }
 @media screen and (max-width: 900px){
     /* Don't show profile image */
-    .profileIMG{
+    .profile-IMG-container{
         display: none;
     } 
-
-    /* Don't show the slideshow */
-    .showProject{
-        display:none;
-    }
-
-    .projectINDV{
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin: 2em;
-    }
-    .projectContent{
-        margin-bottom: 2em;
-    }
-    .skillsUsed{
-        margin: 1em 0;
-    } 
-    .skillList{
-        padding-bottom: 2em;
-    }
-    .heading, .skillText{
+    .heading {
         margin-top: 1.5em;
         font-size: 1.8rem;
     }
-
-
-    /** Subtext on homepage imgae */
-    .subText{
-        font-size: 1em;
-    }
 }
 @media screen and (max-width: 800px){
-    .aTile{ /* each individual tile */
-        flex: 1 1 100%;
-    }
     .tilesContainer{
         margin: 0;
+    }
+    .aTile{
+        flex: 1 1 100%;
     }
 }
 @media screen and (max-width: 700px){
@@ -595,6 +399,18 @@ ol li{
         position: relative;  
     }
 
+    /* Change padding on the landingimage boxes */
+    .landingImage-boxes {
+        padding: .5em;
+    }
+    .imageText {
+        font-size: 2.5rem;
+    }
+
+
+    .aboutContent {
+        margin: .25em;
+    }
 }
 @media screen and (max-width: 600px){
     /* About section - changing sizes */
@@ -618,7 +434,7 @@ ol li{
 
 
     /** Contact form styling */
-    #contactContainer{
+    #contact-container{
         margin: 0;
         margin-bottom: 5em;
     }
@@ -629,11 +445,6 @@ ol li{
     #submitBtn{
         font-size: .8rem;
         width: 12em;
-    }
-}
-@media screen and (max-width: 500px){
-    .imageText{
-        font-size:  2.5rem;
     }
 }
 

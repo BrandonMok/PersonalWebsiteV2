@@ -17,7 +17,6 @@ function doAlert(){
     alert("Thank you for sending a message!")
 }
 
-
 function val(){
     var validateFlag = true;
 
@@ -71,32 +70,4 @@ function checkMessage(dom){
         dom.style.backgroundColor='';
         dom.style.border='';
     }
-}
-
-
-
-/** Slide show */
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n){
-    showSlides(slideIndex += n);
-}
-function currentSlide(n){
-    showSlides(slideIndex = n);
-}
-function showSlides(n){
-    var i;
-    var slides = document.getElementsByClassName("mySlides"); // Get all slides
-    
-    if(n > slides.length){ // If over the # of slides
-        slideIndex = 1;
-    }
-    if(n < 1){
-        slideIndex = slides.length;
-    }
-    for(i = 0; i < slides.length; i++){
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex-1].style.display="block"; 
 }

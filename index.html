@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <head>
     <meta charset = "UTF-8">
-    <meta name="keyword" content="Brandon Mok, Web Developer, Software Developer">
-    <meta name="title" content="Brandon Mok | Web Developer">
+    <meta name="keyword" content="Brandon Mok, Software Developer">
+    <meta name="title" content="Brandon Mok | Software Developer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Brandon Mok | Software Developer</title>
     <link rel="stylesheet" href="css/styles.css"><!-- CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" sizes="32x32">
     <script type='text/javascript' src="js/javascript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,52 +19,40 @@
     <div class ="container">
         <!-- Navigation -->
         <div class="navigation">
-            <!-- Hamburger for responsiveness (initially not shown) -->
             <span id="hamburger" onclick="openNav()">&#9776;</span>
+            <a href="index.html"><div class="logo"></div></a>
 
-            <!-- Logo -->
-            <a href="index.html">
-                <div class="logo"></div>
-            </a>
-
-            <!-- Original Navigation!-->
+            <!-- Original Navigation-->
             <ul class="firstNav">
-                <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#resume">Resume</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
 
-            <!-- For responsive -->
-            <!-- Orignally not shown -->
+            <!-- For responsive only -->
             <div id="myNav" class="overlay">
-                <!-- Close Button -->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <!-- Actual links -->
                 <div class="overlay-content">
-                    <ul>
-                        <li><a href="index.html" onclick="closeNav()">Home</a></li>
+                    <ul id="myNav-items">
                         <li><a href="index.html#about" onclick="closeNav()">About</a></li>
                         <li><a href="index.html#projects" onclick="closeNav()">Projects</a></li>
-                        <li><a href="index.html#resume" onclick="closeNav()">Resume</a></li>
                         <li><a href="index.html#contact" onclick="closeNav()">Contact</a></li>
                     </ul>
                 </div>
-            </div><!-- End of myNav-->
-        </div><!-- End of navigation -->
+            </div>
+        </div>
 
-
-        <!-- Landing image-->
         <div class="landingImage fadein">
-            <p class="imageText">Brandon Mok</p><br />
-            <p class="subText">Software Developer</p>
-        </div><!-- end of landing-->
+            <p class="imageText">Hi. <br> I'm Brandon Mok.</p>
+            <div class="landingImage-box-container">
+                <a href="https://github.com/BrandonMok/" target="_blank"><div class="landingImage-boxes">Github</div></a>
+                <a href="Resume.pdf" target="_blank"><div class="landingImage-boxes">Resume</div></a>
+            </div>
+        </div>
 
 
         <!-- About -->
-        <div class="about" id="about">
-            <!-- About Me-->
+        <div class="about-container" id="about">
             <div class="aboutContent">
                 <p class="heading">Hello</p>
                 <p>I'm Brandon Mok and, I'm a software developer
@@ -73,43 +62,73 @@
                 <p>
                     I have experience with databases, object-orientated 
                     programming, and full-stack web development.
-                    Some of my skills consist of HTML, CSS, JS, PHP, Java, and SQL.
+                    A few of my skills consists of HTML, CSS, JS, PHP, Java, and SQL.
                 </p>
                 <p>
-                    The projects I've participated in can be found below in the <i>Projects</i> 
-                    section and on my resume which ranges anywhere from an actual home realtor website
-                    to an SMTP message transfer program.
-                </p>
-                <p>
-                    If you would like to get in touch, visit the <i>Contact</i> section further
-                    down the page.
+                    The projects I've worked on can be found in the <i>Projects</i> 
+                    section below and on my resume.
+                    If you would like to get in contact, feel free to send a message below in the <i>Contact</i> section.
                 </p>
             </div>
 
-            <!-- Profile Picture-->
-            <div class="profileIMG"></div>
-            
-        </div><!-- End of About -->
-
-
+            <div class="profile-IMG-container">
+                <div id="profile-IMG-div">
+                    <img src="./images/profile.png" alt="Brandon Mok" title="Brandon Mok" id="profile-IMG"/>
+                </div>
+            </div>
+        </div>
 
         <!-- Projects -->
         <div class="projects" id="projects">
             <p class="heading textCenter">Projects</p>
             <div class="tilesContainer">
-                <div class="aTile" id="tile2"><a href="favoritePlace.html">Favorite Place - Individual</a></div>
-                <div class="aTile" id="tile3"><a href="realtor.html">Realtor Website - Group</a></div>
-                <div class="aTile" id="tile4"><a href="smtp.html">SMTP Mail - Group</a></div>
-                <div class="aTile" id="tile5"><a href="facultyResearch.html">Faculty Research - Group</a></div>
-                <div class="aTile" id="tile6"><a href="cynergy.html">Cynergy - Group</a></div>
-                <div class="aTile" id="tile7"><a href="weatherapp.html">Weather App</a></div>
+                <div class="aTile">
+                        IST Website Rework - JS
+                        <br><br>
+                    <a href="https://github.com/BrandonMok/ClientProject2" target="_blank" class="visit-repo-text">
+                        Visit Repo
+                    </a>
+                </div>
+                <div class="aTile">
+                        Realtor Website
+                        <br><br>
+                    <a href="https://github.com/BrandonMok/GroupProject" target="_blank" class="visit-repo-text">
+                        Visit Repo
+                    </a>
+                </div>
+                <div class="aTile">
+                        SMTP Mail Transfer
+                        <br><br>
+                    <a href="https://github.com/BrandonMok/SMTP" target="_blank" class="visit-repo-text">
+                        Visit Repo
+                    </a>
+                </div>
+                <div class="aTile">
+                        Faculty Research
+                        <br><br>
+                    <a href="https://github.com/BrandonMok/DatabaseResearch-" target="_blank" class="visit-repo-text">
+                        Visit Repo
+                    </a>
+                </div>
+                <div class="aTile">
+                        Favorite Place Website
+                        <br><br>
+                    <a href="https://github.com/BrandonMok/ISTE240-Individual" target="_blank" class="visit-repo-text">
+                        Visit Repo
+                    </a>
+                </div>
+                <div class="aTile">
+                        HBU (How About You?)
+                        <br><br>
+                    <a href="https://github.com/BrandonMok/HBU" target="_blank" class="visit-repo-text">
+                        Visit Repo
+                    </a>
+                </div>
             </div>
          </div><!-- End of projects-->
 
- 
-
         <!-- Contact -->
-        <div id="contactContainer">
+        <div id="contact-container">
             <p class="heading" id="contact">Contact</p>
             <form name="contactForm" method="POST" onsubmit="return val()" netlify>
                 <input type="text" name="name" placeholder="Your Name" id="name" onchange="updateField(this);" />
@@ -120,68 +139,57 @@
             </form>
         </div>
 
-
-
         <!-- Footer -->
         <footer>
-            <p class="hiring">Unavailable for hire</p>
-            <p class="footerText">Unavailable for 2019 summer, but feel free to look at my resume!</p>
-            <a href="resume.pdf" target="_blank"><div class="resumeBtn" id="resume">Resume</div></a>
-
-            <div class="social">
+            <div class="social-container">
+                <!-- https://fontawesome.com/license -->
                 <a href="https://linkedin.com/in/brandonmok" target="_blank"> 
-                    <!-- https://fontawesome.com/license -->
                     <i class="fab fa-linkedin socialIcons" id="linkedin"></i>
                 </a>
+                <!-- https://fontawesome.com/license -->
                 <a href="https://github.com/BrandonMok" target="_blank">
-                    <!-- https://fontawesome.com/license -->
                     <i class="fab fa-github socialIcons" id="github"></i>
                 </a>
+                <!-- https://fontawesome.com/license -->
+                <a href="Resume.pdf" target="_blank">
+                    <i class="fas fa-file socialIcons" id="resume"></i>                    
+                </a>
             </div>
-            
             <p class="copyright">&copy; 2019 Brandon Mok</p>
         </footer>
+    </div>
 
 
-
-
-
-        <!-- Homepage navbar changes depending on scroll -->
-        <script>
-            /**
-            * offset() - Gets the position of the element
-            */
-
-            $(function() {
-                var nav = $(".navigation");
-                var logo = $(".logo");
-                var navLinks = $(".firstNav li a");
-
-                var about = $("#about").offset().top; // switch point
-
-                var hamburger = $("#hamburger");
-                
+    <!-- Homepage navbar changes depending on scroll -->
+    <script>
+        /**
+        * offset() - Gets the position of the element
+        */
+        $(function() {
+            var nav = $(".navigation");
+            var logo = $(".logo");
+            var navLinks = $(".firstNav li a");
+            var about = $("#about").offset().top; // switch point
+            var hamburger = $("#hamburger");
             
-                $(window).scroll(function() {    
-                    var scroll = $(window).scrollTop();
-
-                    if (scroll >= about - 100) { // Changes at the point
-                        nav.css("background-color","white");
-                        nav.css("transition","0.3s all");
-                        navLinks.css("color","black")
-                        nav.css("box-shadow", "0 4px 10px rgba(0,0,0,.16)");
-                        hamburger.css("color","black");
-                    } else { // original
-                        nav.css("background-color","transparent");
-                        nav.css("transition","0.2s all");
-                        navLinks.css("color","white")
-                        nav.css("box-shadow", "none");
-                        hamburger.css("color","white");
-                    }
-                });
-            });
-        </script>
         
-    </div><!-- End of Container-->
+            $(window).scroll(function() {    
+                var scroll = $(window).scrollTop();
+                if (scroll >= about - 100) { // Changes at the point
+                    nav.css("background-color","white");
+                    nav.css("transition","0.3s all");
+                    navLinks.css("color","black")
+                    nav.css("box-shadow", "0 4px 10px rgba(0,0,0,.16)");
+                    hamburger.css("color","black");
+                } else { // original
+                    nav.css("background-color","transparent");
+                    nav.css("transition","0.2s all");
+                    navLinks.css("color","white")
+                    nav.css("box-shadow", "none");
+                    hamburger.css("color","white");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
