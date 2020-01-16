@@ -187,7 +187,7 @@ div .aboutContent p{
 /** Projects */
 .projects{
     padding: 1.5em 0;
-    margin: 2em;
+    margin: 2em 2em 6em 2em;
     background-color: #f7f7f7;
 }
 .tilesContainer{
@@ -199,11 +199,14 @@ div .aboutContent p{
 .aTile{ /* each individual tile */
     flex: 1 1 30%;
     margin: .5em;
-    padding: 1.5em 0;
+    padding: 1.25em 0;
     text-align: center;
     border: 3px solid #222222;
     font-size: 1.25rem;
     font-weight: bold;
+}
+#tile-repo {
+    padding: .75em;
 }
 .visit-repo-text {
     padding: 1em;
@@ -218,7 +221,7 @@ div .aboutContent p{
 
 
 /** Contact - Form */
-#contact-container{
+/* #contact-container{
     text-align: center;
     justify-content: center;
     margin: 2em;
@@ -247,7 +250,7 @@ form textarea{
     cursor: pointer;
     border: 3px solid #3d3d3d;
     color: #222222;
-}
+} */
 
 
 
@@ -363,8 +366,6 @@ footer{
 
 
 /** Media Queries */
-@media screen and (max-width: 1000px){
-}
 @media screen and (max-width: 900px){
     /* Don't show profile image */
     .profile-IMG-container{
@@ -407,7 +408,6 @@ footer{
         font-size: 2.5rem;
     }
 
-
     .aboutContent {
         margin: .25em;
     }
@@ -434,7 +434,7 @@ footer{
 
 
     /** Contact form styling */
-    #contact-container{
+    /* #contact-container{
         margin: 0;
         margin-bottom: 5em;
     }
@@ -445,6 +445,6 @@ footer{
     #submitBtn{
         font-size: .8rem;
         width: 12em;
-    }
+    } */
 }
 
