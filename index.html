@@ -16,22 +16,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-    <!-- Container -->
-    <div class ="container">
-        <!-- Navigation -->
+    <div class="container">
         <div class="navigation">
             <span id="hamburger" onclick="openNav()">&#9776;</span>
-            <a href="index.html"
-                ><div class="logo"></div>
+            <a href="index.html">
+                <div class="logo"></div>
             </a>
 
-            <!-- Original Navigation-->
             <ul class="firstNav">
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#projects">Projects</a></li>
             </ul>
 
-            <!-- For responsive only -->
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
@@ -44,7 +40,7 @@
         </div>  
 
         <div class="landingImage fadein">
-            <p class="imageText">Hi. <br> I'm Brandon Mok.</p>
+            <p class="imageText">Hi. <br> I'm Brandon. &#128400</p>
             <div class="landingImage-box-container">
                 <a href="https://github.com/BrandonMok/" target="_blank"><div class="landingImage-boxes">Github</div></a>
                 <a href="Resume.pdf" target="_blank"><div class="landingImage-boxes">Resume</div></a>
@@ -53,7 +49,6 @@
         </div>
 
 
-        <!-- About -->
         <div class="about-container" id="about">
             <div class="aboutContent">
                 <p class="heading">Hello</p>
@@ -79,7 +74,6 @@
             </div>
         </div>
 
-        <!-- Projects -->
         <div class="projects" id="projects">
             <p class="heading textCenter">Projects</p>
             <div class="tilesContainer">
@@ -112,9 +106,9 @@
                     </a>
                 </div>
                 <div class="aTile">
-                        HBU
+                        CalCount
                         <br><br>
-                    <a href="https://github.com/BrandonMok/HBU" target="_blank" class="visit-repo-text">
+                    <a href="https://github.com/BrandonMok/CalCount" target="_blank" class="visit-repo-text">
                         Visit Repo
                     </a>
                 </div>
@@ -131,18 +125,15 @@
             </div>
          </div>
 
-        <!-- Footer -->
         <footer>
+            <!-- Icon src: https://fontawesome.com/license -->
             <div class="social-container">
-                <!-- https://fontawesome.com/license -->
                 <a href="https://linkedin.com/in/brandonmok" target="_blank"> 
                     <i class="fab fa-linkedin socialIcons" id="linkedin"></i>
                 </a>
-                <!-- https://fontawesome.com/license -->
                 <a href="https://github.com/BrandonMok" target="_blank">
                     <i class="fab fa-github socialIcons" id="github"></i>
                 </a>
-                <!-- https://fontawesome.com/license -->
                 <a href="Resume.pdf" target="_blank">
                     <i class="fas fa-file socialIcons" id="resume"></i>                    
                 </a>
@@ -152,28 +143,25 @@
     </div>
 
 
-    <!-- Homepage navbar changes depending on scroll -->
+
     <script>
-        /**
-        * offset() - Gets the position of the element
-        */
         $(function() {
             var nav = $(".navigation");
             var logo = $(".logo");
             var navLinks = $(".firstNav li a");
-            var about = $("#about").offset().top; // switch point
+            var about = $("#about").offset().top; 
             var hamburger = $("#hamburger");
             
         
             $(window).scroll(function() {    
                 var scroll = $(window).scrollTop();
-                if (scroll >= about - 100) { // Changes at the point
+                if (scroll >= about - 100) { 
                     nav.css("background-color","white");
                     nav.css("transition","0.3s all");
                     navLinks.css("color","black")
                     nav.css("box-shadow", "0 4px 10px rgba(0,0,0,.16)");
                     hamburger.css("color","black");
-                } else { // original
+                } else { 
                     nav.css("background-color","transparent");
                     nav.css("transition","0.2s all");
                     navLinks.css("color","white")
